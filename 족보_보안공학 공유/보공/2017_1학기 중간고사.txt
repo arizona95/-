@@ -1,0 +1,18 @@
+-보안공학-
+2017년도 1학기 중간고사
+
+1. (10 points)	What is Security Engineering? What is its goal and how can we get it?
+
+2. (10 points)	What is the VST(Verified Software Toolchain)?
+
+3. (10 points)	Describe the following 3 assurance methods with examples :
+		'Assessment of the Deliverable', 'Assessment of the Processes', 'Assessment of the Environment'
+
+4. (20 points)	Explain the 5 steps of Threat Risk Analysis in detail.
+
+5. (40 points)	(1) Show the DFD in Smart Watch (without SIM card).
+		(2) By using the above data-flow model, show the STRIDE threat analysis.
+		(3) The above STRIDE analysis yields many different threats. By using attack trees. characterize and analyze these threats.
+		(4) Show the DREAD risk analysis on each attacker's goal.
+
+6. (10 points) Does DAC prevent information leakage? Why? And what about MAC, does it always prevent information leakage?

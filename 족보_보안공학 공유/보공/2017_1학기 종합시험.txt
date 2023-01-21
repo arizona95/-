@@ -1,0 +1,11 @@
+1. 걸프전이 왜 최초의 정보 전쟁(Information war)인가 ?
+2. DFD를 사용하는 이유와 계층적(Hierarchy) 모델을 사용하는 이유 ?
+3. LATTICE를 사용하는 이유
+4. 위협 모델링 시 사용하는 STRIDE와 OCTAVE에 대해서 설명
+5. Formal Method에 대해서 설명하고 Verification process, Implementation process, Specification process가 무슨 단계인지 설명
+6. IP Surveillance Camera 
+(1) DFD 그리기
+(2) STRIDE 분석
+(3) ATTACK TREE 그리기
+(4) DREAD 분석
+(5) 보안 대책

@@ -1,0 +1,22 @@
+2017.08 보공 종시
+1. security engineering은 무엇인가? 왜 이게 어렵나?
+
+2. 헐뭐였지
+
+3. sorting a list of numbers를 formalize하세염
+
+4. 
+(1) BLP에서 레벨 함수를 classification하시고 clearance에 대해 말해보셈
+-->explain about clearance and classification security level function f =(fs, fc, fo) im BLP model.
+
+(2) BLP쓰면 위레벨 Subject가 아래레벺 suvject한테 메시지 전달을 못함. 이를 해결하기 위한 방법 듀개 쓰셈
+-->threat modeling에서 dfd쓰는 이유랑 이걸 hiererchical 로 쓰는이유
+
+5. 의사 간호사뮨제 기출이랑 너뮤 똑같
+
+6. app ecosystem
+1) dfd
+2) stride
+3) attack tree
+4) dread
+5) how to protect end users from malware?

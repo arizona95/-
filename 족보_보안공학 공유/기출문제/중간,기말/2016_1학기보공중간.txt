@@ -1,0 +1,31 @@
+1. 보안공학이란? 보안공학이 어려운 이유를 서술하시오.
+
+2. DFD를 왜 쓰는지 설명하시오. 그리고 DFD를 hierarchical decomposition으로 쓰는 이유도 설명하시오.
+
+3. 패스워드 시스템에서 위협을 나열하고 countermeauser에 대해 논하시오.
+
+4. DAC Model은 information leakage를 견딜 수 있는가? 그렇게 생각한 이유는 무엇인가?
+   MAC Model에 대해서 서술하고 MAC은 information leakage에 항상 견딜 수 있냐?
+
+5. Lattice가 MLS Model에서 꼭 필요한 이유는?
+
+6. Security Level은 Top Secret > Secret이고 compartment는 {Nuclear, Chemical}이 있다. 이에 관한 Lattice를 그리고
+glb( (TS , {Nuclear}) , (S, {Nuclear,Chemical}) 과 lub( (TS , {Nuclear}) , (S, {Nuclear,Chemical})를 구하시오.
+
+7. Security Level이 n개고 Compartment가 m개 일때 Security Class는 몇 개가 나오겠는가?
+
+8. Secure Kernel에서 BLP의 property를 위반하는 상황을 쓰시오
+
+9. 환자정보를 관리하는 병원 로그인 시스템은 다음과 같은 정책에 의해 돌아간다
+	1. Nurse가 환자를 등록하면 capability를 부여한다.
+	2. 처음 등록한 날짜로부터 90일간만 사용이 가능하다.
+	3. 정상적인 사용을 종료하면 offline해야한다.
+
+   capability의 모양은
+	patient-id , validate-date , hmac(K, (patient-id, validate-date)) 로 구성된다.
+
+
+   문제 a. A는 B에게 넘겨주고 B는 C에게 넘겨주고 C는 D에게 넘겨주었다. 이 경우 D는 capability를 사용가능한가?
+   문제 b. 문제점이 많아서 다른 사람에게 capability를 넘겨줬을 경우 10일만 사용하고 종료되게 정책을 바꾸었다. 
+	   바뀐 정책을 반영한 capability를 만들고 설명하시오.
+	

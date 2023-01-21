@@ -1,0 +1,19 @@
+2017년 3월
+종합시험
+
+<보안 공학>   -----------------------보안공학은 기말고사가 이전 종시에서 나온 적도 있다고 합니다.
+1. 걸프전이 왜 information war?
+2. MLS에서 lattice 왜?
+3. DFD 왜씀? 계층적인건 왜?
+4. STRIDE OCTAVE 간략히 설명
+5. Formal method가 뭐? Specification, development, verification에서 역할(rules)을 써라
+6. IP surveillance 1) DFD 2) stride 3) attack tree 4) DREAD 5) 막는 방법?
+
+<사이버 법률>
+1. 물리적 존재, 최소권한의 법칙, 관할확장법, 효과이론 설명
+2. International shoe co.
+Calder vs Jone
+3. 직접침해 기여침해 대위침해설명
+Sega vs MAPHIA
+4. Patent 특징 설명
+5. 제1, 4, 5, 9조 Privacy 으로 설명

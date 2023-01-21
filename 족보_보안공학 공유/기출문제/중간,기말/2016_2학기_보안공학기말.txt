@@ -1,0 +1,7 @@
+1. Doctor, Nurse, Patient Records, Prescription 관계에서 Lattice 그리기 및 security model 선정(20점)
+2. STRIDE와 OCTAVE 간략히 설명 및 차이점(10점)
+3. Reference monitor에서 Satety property의 뜻과 Liveness의 차이점(20점)
+4. specification process, development process, verification process에 대하여 설명
+5. (1) OW-CPA Formal하게 기술(10점)
+   (2) f(x) = x+m 일때 이 암호 scheme이 OW-CPA를 달성하는지 여부(10점)
+6. Symbolic execution 시행 및 절차(20점)_2016년 1학기 기말고사와 유사

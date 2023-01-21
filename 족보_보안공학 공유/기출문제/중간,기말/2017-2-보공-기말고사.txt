@@ -1,0 +1,17 @@
+2017년 2학기 기말고사
+1. 소프트 공학에서 '폭포수 모델'을 신뢰한 시스템을 만드는데 일반적으로 사용되는 이유가 무엇인가.
+
+2. tranquility의 의미를 말하고, tranquility가 참이 아니라는 것의 의미를 말하라.
+
+3. 보안커널에서 Bell-LaPadula 모델의 특성을 위반하고 싶은 상황이 무엇일지를 서술하라.
+
+4. 다음 Design Assurance를 분석하라.
+Security Goal : OW-CPA
+암호 : E(m)=<f(x), x\oplusm>
+x는 랜덤, f는 공개된 one way function
+
+5. Model Extraction(Abstraction)의 의미를 쓰고, Model이 Sound하다는 것의 의미를 써라.
+
+6. Model Checking에서 사용되는 기술을 이용해 Code Assuarance를 '왜'해야하는지와 '어떻게' 하는지를 기술하라.
+
+7. EAL1,2,4,7의 차이를 상세히 기술하라. 

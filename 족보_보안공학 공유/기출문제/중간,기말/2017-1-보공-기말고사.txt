@@ -1,0 +1,14 @@
+2017 1학기 보안공학 기말고사
+1.Is it possible to have system with low reliability that must be available. If yes, how to build this system?
+
+2. state 5 steps of Threat risk analysis in detail.
+
+3. BLP 모델에서 Higher level subject가 Low lever subject에게 메시지를 보낼 수 있는 방법을 서술 하시오 (2가지 방법)
+
+4. Formalizing ‘Sorting a list’
+
+5. Semantic security 와 Perfect Secrecy의 차이점을 서술하시오
+
+6. Execution tree 로 Assert fail을 보이시오
+
+7. EAL7에서는 왜 아직도 Mathematical Proof 보다 Testing 에 의존 하여 평가 하는가?
