@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://roytravel.tistory.com/346 -->
+<html lang="ko" class=""><script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/wpm.js.다운로드" async=""></script><script id="youtube-hd-fjdmkanbdloodhegphphhklnjfngoffa">var ythdlog = () => {};;var ythderror = () => {};</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                
+                
+                        <!-- BusinessLicenseInfo - START -->
+        
+            <link href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/style.css" rel="stylesheet" type="text/css">
+
+            <script>function switchFold(entryId) {
+    var businessLayer = document.getElementById("businessInfoLayer_" + entryId);
+
+    if (businessLayer) {
+        if (businessLayer.className.indexOf("unfold_license") > 0) {
+            businessLayer.className = "business_license_layer";
+        } else {
+            businessLayer.className = "business_license_layer unfold_license";
+        }
+    }
+}
+</script>
+
+        
+        <!-- BusinessLicenseInfo - END -->
+        <!-- DaumShow - START -->
+        <style type="text/css">#daumSearchBox {
+    height: 21px;
+    background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bg_search2_2.gif);
+    margin: 5px auto;
+    padding: 0;
+}
+
+#daumSearchBox input {
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#daumSearchBox #daumLogo {
+    width: 34px;
+    height: 21px;
+    float: left;
+    margin-right: 5px;
+    background-image: url(//i1.daumcdn.net/img-media/tistory/img/bg_search1_2_2010ci.gif);
+}
+
+#daumSearchBox #show_q {
+    background-color: transparent;
+    border: none;
+    font: 12px Gulim, Sans-serif;
+    color: #555;
+    margin-top: 4px;
+    margin-right: 15px;
+    float: left;
+}
+
+#daumSearchBox #show_btn {
+    background-image: url(//i1.daumcdn.net/imgsrc.search/search_all/show/tistory/plugin/bt_search_2.gif);
+    width: 37px;
+    height: 21px;
+    float: left;
+    margin: 0;
+    cursor: pointer;
+    text-indent: -1000em;
+}
+</style>
+
+        <!-- DaumShow - END -->
+
+<!-- System - START -->
+
+<!-- System - END -->
+
+        <!-- TistoryProfileLayer - START -->
+        <link href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/style(1).css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/script.js.다운로드"></script>
+
+        <!-- TistoryProfileLayer - END -->
+
+                
+                <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/jquery-3.5.1.min.js.다운로드" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/lightbox-v2.10.0.min.js.다운로드" defer=""></script>
+<script type="text/javascript" src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/tiara.min.js.다운로드"></script><meta name="referrer" content="always">
+<meta name="google-adsense-platform-account" content="ca-host-pub-9691043933427338">
+<meta name="google-adsense-platform-domain" content="tistory.com">
+<meta name="description" content="정보보안학 석사 과정을 졸업한지 1년 쯤 되어가고, 관심분야도 보안에서 딥러닝으로 바뀐지 꽤 오래 되었네요. 불현듯 자기 전 작년 종합시험 준비로 고통받던 때가 떠올라 이 글을 쓰게 됐습니다. 재학 기간 동안 두 번의 시험 기회가 있었고 첫 번째 기회를 날리는 고배를 마신 뒤 절치부심하는 마음으로 정리한 내용입니다. 중간/기말/종합시험 모두에 어느 정도 도움이 되리라 생각합니다. 가급적 논리적 서술이 가능하도록 정의, 배경, 특징, 장점, 단점, 차이점, 방법, 활용, 종류, 목표 등을 고려해 작성하였습니다. 아래에 예상 질문들은 강의 내용을 총 정리하다보니 자연스럽게 시험에서 이런 것을 물어볼 것 같다고 예상한 질문과 답안들입니다. 중간에 예상 답안이 부재한 경우는 2가지 이유입니다. 첫 번째는 교수님..">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://roytravel.tistory.com/346">
+<meta property="og.article.author" content="roytravel">
+<meta property="og:site_name" content="For a better world">
+<meta property="og:title" content="[사이버 보안] 보안공학 종합시험 정리">
+<meta name="by" content="roytravel">
+<meta property="og:description" content="정보보안학 석사 과정을 졸업한지 1년 쯤 되어가고, 관심분야도 보안에서 딥러닝으로 바뀐지 꽤 오래 되었네요. 불현듯 자기 전 작년 종합시험 준비로 고통받던 때가 떠올라 이 글을 쓰게 됐습니다. 재학 기간 동안 두 번의 시험 기회가 있었고 첫 번째 기회를 날리는 고배를 마신 뒤 절치부심하는 마음으로 정리한 내용입니다. 중간/기말/종합시험 모두에 어느 정도 도움이 되리라 생각합니다. 가급적 논리적 서술이 가능하도록 정의, 배경, 특징, 장점, 단점, 차이점, 방법, 활용, 종류, 목표 등을 고려해 작성하였습니다. 아래에 예상 질문들은 강의 내용을 총 정리하다보니 자연스럽게 시험에서 이런 것을 물어볼 것 같다고 예상한 질문과 답안들입니다. 중간에 예상 답안이 부재한 경우는 2가지 이유입니다. 첫 번째는 교수님..">
+<meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbzgqoT%2FbtrNANr5KbS%2FN6WAtSPAgYSo6KtVME7hV0%2Fimg.png">
+<meta property="article:section" content="&#39;IT 인터넷&#39;">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@TISTORY">
+<meta name="twitter:title" content="[사이버 보안] 보안공학 종합시험 정리">
+<meta name="twitter:description" content="정보보안학 석사 과정을 졸업한지 1년 쯤 되어가고, 관심분야도 보안에서 딥러닝으로 바뀐지 꽤 오래 되었네요. 불현듯 자기 전 작년 종합시험 준비로 고통받던 때가 떠올라 이 글을 쓰게 됐습니다. 재학 기간 동안 두 번의 시험 기회가 있었고 첫 번째 기회를 날리는 고배를 마신 뒤 절치부심하는 마음으로 정리한 내용입니다. 중간/기말/종합시험 모두에 어느 정도 도움이 되리라 생각합니다. 가급적 논리적 서술이 가능하도록 정의, 배경, 특징, 장점, 단점, 차이점, 방법, 활용, 종류, 목표 등을 고려해 작성하였습니다. 아래에 예상 질문들은 강의 내용을 총 정리하다보니 자연스럽게 시험에서 이런 것을 물어볼 것 같다고 예상한 질문과 답안들입니다. 중간에 예상 답안이 부재한 경우는 2가지 이유입니다. 첫 번째는 교수님..">
+<meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbzgqoT%2FbtrNANr5KbS%2FN6WAtSPAgYSo6KtVME7hV0%2Fimg.png">
+<meta content="https://roytravel.tistory.com/346" property="dg:plink">
+<meta name="plink">
+<meta name="title" content="[사이버 보안] 보안공학 종합시험 정리">
+<meta name="article:media_name" content="For a better world">
+<meta property="article:mobile_url" content="https://roytravel.tistory.com/m/346">
+<meta property="article:pc_url" content="https://roytravel.tistory.com/346">
+<meta property="article:mobile_view_url" content="https://roytravel.tistory.com/m/346">
+<meta property="article:pc_view_url" content="https://roytravel.tistory.com/346">
+<meta property="article:talk_channel_view_url" content="https://roytravel.tistory.com/m/346">
+<meta property="article:pc_service_home" content="https://www.tistory.com">
+<meta property="article:mobile_service_home" content="https://www.tistory.com/m">
+<meta property="article:txid" content="3162863_346">
+<meta property="article:published_time" content="2022-10-03T07:39:32+09:00">
+<meta property="og:regDate" content="20221003073932">
+<meta property="article:modified_time" content="2022-10-14T07:44:09+09:00">
+<link rel="stylesheet" type="text/css" href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/lightbox.min.css">
+<link rel="stylesheet" type="text/css" href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/font.css">
+<link rel="stylesheet" type="text/css" href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/content.css">
+<link rel="stylesheet" type="text/css" href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/uselessPMargin.css">
+<script type="text/javascript">(function() {
+    var tjQuery = jQuery.noConflict(true);
+    window.tjQuery = tjQuery;
+    window.orgjQuery = window.jQuery; window.jQuery = tjQuery;
+    window.jQuery = window.orgjQuery; delete window.orgjQuery;
+})()</script>
+<script type="text/javascript" src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/base.js.다운로드"></script>
+<script type="text/javascript">if (!window.T) { window.T = {} }
+window.T.config = {"TOP_SSL_URL":"https://www.tistory.com","PREVIEW":false,"ROLE":"guest","PREV_PAGE":"","NEXT_PAGE":"","BLOG":{"id":3162863,"name":"roytravel","title":"For a better world","isDormancy":false},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https://www.tistory.com/auth/login/?redirectUrl=https%3A%2F%2Froytravel.tistory.com%2F346","DEFAULT_URL":"https://roytravel.tistory.com","USER":{"name":null,"homepage":null},"SUBSCRIPTION":{"status":"none","isConnected":false,"isPending":false,"isWait":false,"isProcessing":false,"isNone":true},"IS_LOGIN":false,"HAS_BLOG":false,"TOP_URL":"http://www.tistory.com","JOIN_URL":"https://www.tistory.com/member/join","ROLE_GROUP":"visitor"};
+window.appInfo = {"domain":"tistory.com","topUrl":"https://www.tistory.com","loginUrl":"https://www.tistory.com/auth/login","logoutUrl":"https://www.tistory.com/auth/logout"};
+window.initData = {};
+
+window.TistoryBlog = {
+    basePath: "",
+    url: "https://roytravel.tistory.com",
+    tistoryUrl: "https://roytravel.tistory.com",
+    manageUrl: "https://roytravel.tistory.com/manage",
+    token: "mkDo/uRTRo44an/ycMr7pCK7v8ss2h4AeOrfAT22P1GAqpgMGfH7dH+lsHU9sfBD"
+};
+var servicePath = "";
+var blogURL = "";</script>
+<script type="text/javascript" src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/kakao.min.js.다운로드"></script>
+
+                
+	<title>[사이버 보안] 보안공학 종합시험 정리 :: For a better world</title>
+	
+	
+	<script> MathJax = { tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]} }; </script> <script id="MathJax-script" async="" src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/tex-chtml.js.다운로드"></script>
+	<style>
+		img[src*="new_ico_1"]{filter: sepia(100%) hue-rotate(-45deg) saturate(1000%) contrast(200%);}
+	</style>
+	
+<meta name="title" content="[사이버 보안] 보안공학 종합시험 정리 :: For a better world">
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+<link rel="alternate" type="application/rss+xml" title="For a better world" href="https://roytravel.tistory.com/rss">
+<link rel="shortcut icon" href="https://roytravel.tistory.com/favicon.ico">
+
+<link rel="stylesheet" href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/style(2).css">
+<link rel="stylesheet" href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+<script>
+//추가 단축키
+var key = new Array();
+key['w'] = "/admin/entry/post/";
+key['e'] = "/admin/skin/edit/";
+key['r'] = "/admin/plugin/refererUrlLog/";
+key['h'] = "/";
+
+function getKey(keyStroke) {
+	if ((event.srcElement.tagName != 'INPUT') && (event.srcElement.tagName != 'TEXTAREA')){
+		isNetscape=(document.layers);
+		eventChooser = (isNetscape) ? keyStroke.which : event.keyCode;
+		which = String.fromCharCode(eventChooser).toLowerCase();
+		for (var i in key)
+			if (which == i) window.location = key[i];
+	}
+}
+document.onkeypress = getKey;
+</script><style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style>
+
+                
+                
+                <style type="text/css">.another_category {
+    border: 1px solid #E5E5E5;
+    padding: 10px 10px 5px;
+    margin: 10px 0;
+    clear: both;
+}
+
+.another_category h4 {
+    font-size: 12px !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #E5E5E5 !important;
+    padding: 2px 0 6px !important;
+}
+
+.another_category h4 a {
+    font-weight: bold !important;
+}
+
+.another_category table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+
+* html .another_category table {
+    width: auto !important;
+}
+
+*:first-child + html .another_category table {
+    width: auto !important;
+}
+
+.another_category th, .another_category td {
+    padding: 0 0 4px !important;
+}
+
+.another_category th {
+    text-align: left;
+    font-size: 12px !important;
+    font-weight: normal;
+    word-break: break-all;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.another_category td {
+    text-align: right;
+    width: 80px;
+    font-size: 11px;
+}
+
+.another_category th a {
+    font-weight: normal;
+    text-decoration: none;
+    border: none !important;
+}
+
+.another_category th a.current {
+    font-weight: bold;
+    text-decoration: none !important;
+    border-bottom: 1px solid !important;
+}
+
+.another_category th span {
+    font-weight: normal;
+    text-decoration: none;
+    font: 10px Tahoma, Sans-serif;
+    border: none !important;
+}
+
+.another_category_color_gray, .another_category_color_gray h4 {
+    border-color: #E5E5E5 !important;
+}
+
+.another_category_color_gray * {
+    color: #909090 !important;
+}
+
+.another_category_color_gray th a.current {
+    border-color: #909090 !important;
+}
+
+.another_category_color_gray h4, .another_category_color_gray h4 a {
+    color: #737373 !important;
+}
+
+.another_category_color_red, .another_category_color_red h4 {
+    border-color: #F6D4D3 !important;
+}
+
+.another_category_color_red * {
+    color: #E86869 !important;
+}
+
+.another_category_color_red th a.current {
+    border-color: #E86869 !important;
+}
+
+.another_category_color_red h4, .another_category_color_red h4 a {
+    color: #ED0908 !important;
+}
+
+.another_category_color_green, .another_category_color_green h4 {
+    border-color: #CCE7C8 !important;
+}
+
+.another_category_color_green * {
+    color: #64C05B !important;
+}
+
+.another_category_color_green th a.current {
+    border-color: #64C05B !important;
+}
+
+.another_category_color_green h4, .another_category_color_green h4 a {
+    color: #3EA731 !important;
+}
+
+.another_category_color_blue, .another_category_color_blue h4 {
+    border-color: #C8DAF2 !important;
+}
+
+.another_category_color_blue * {
+    color: #477FD6 !important;
+}
+
+.another_category_color_blue th a.current {
+    border-color: #477FD6 !important;
+}
+
+.another_category_color_blue h4, .another_category_color_blue h4 a {
+    color: #1960CA !important;
+}
+
+.another_category_color_violet, .another_category_color_violet h4 {
+    border-color: #E1CEEC !important;
+}
+
+.another_category_color_violet * {
+    color: #9D64C5 !important;
+}
+
+.another_category_color_violet th a.current {
+    border-color: #9D64C5 !important;
+}
+
+.another_category_color_violet h4, .another_category_color_violet h4 a {
+    color: #7E2CB5 !important;
+}
+</style>
+
+                
+                <link rel="stylesheet" type="text/css" href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/dialog.css">
+<link rel="stylesheet" type="text/css" href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/font(1).css">
+<link rel="stylesheet" type="text/css" href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/postBtn.css">
+<link rel="stylesheet" type="text/css" href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/tistory.css">
+<link rel="canonical" href="https://roytravel.tistory.com/346">
+
+<!-- BEGIN STRUCTURED_DATA -->
+<script type="application/ld+json">
+    {"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https://roytravel.tistory.com/346","name":null},"url":"https://roytravel.tistory.com/346","headline":"[사이버 보안] 보안공학 종합시험 정리","description":"정보보안학 석사 과정을 졸업한지 1년 쯤 되어가고, 관심분야도 보안에서 딥러닝으로 바뀐지 꽤 오래 되었네요. 불현듯 자기 전 작년 종합시험 준비로 고통받던 때가 떠올라 이 글을 쓰게 됐습니다. 재학 기간 동안 두 번의 시험 기회가 있었고 첫 번째 기회를 날리는 고배를 마신 뒤 절치부심하는 마음으로 정리한 내용입니다. 중간/기말/종합시험 모두에 어느 정도 도움이 되리라 생각합니다. 가급적 논리적 서술이 가능하도록 정의, 배경, 특징, 장점, 단점, 차이점, 방법, 활용, 종류, 목표 등을 고려해 작성하였습니다. 아래에 예상 질문들은 강의 내용을 총 정리하다보니 자연스럽게 시험에서 이런 것을 물어볼 것 같다고 예상한 질문과 답안들입니다. 중간에 예상 답안이 부재한 경우는 2가지 이유입니다. 첫 번째는 교수님..","author":{"@type":"Person","name":"roytravel","logo":null},"image":{"@type":"ImageObject","url":"https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbzgqoT%2FbtrNANr5KbS%2FN6WAtSPAgYSo6KtVME7hV0%2Fimg.png","width":"800px","height":"800px"},"datePublished":"20221003T07:39:32","dateModified":"20221014T07:44:09","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png","width":"800px","height":"800px"}}}
+</script>
+<!-- END STRUCTURED_DATA -->
+<script type="text/javascript" src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/common.js.다운로드"></script>
+
+                <style type="text/css">#DragSchLayer{display:block;position:absolute;z-index:1000;width:61px;height:31px;margin:-30px 0px 0px -5px;background:url(//search1.daumcdn.net/search/statics/common/pi/btn_drag_rect.png);cursor:pointer}             @media             only screen and (-webkit-min-device-pixel-ratio: 1.5),             only screen and (min-device-pixel-ratio: 1.5),             only screen and (min-resolution: 1.5dppx) {             #DragSchLayer{background-image:url(//search1.daumcdn.net/search/statics/common/pi/r2/btn_drag_rect.png);background-size:61px 31px}}            </style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-math {
+  display: inline-block;
+  text-align: left;
+  line-height: 0;
+  text-indent: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  font-size-adjust: none;
+  letter-spacing: normal;
+  border-collapse: collapse;
+  word-wrap: normal;
+  word-spacing: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 1px 0;
+}
+
+mjx-container[jax="CHTML"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="CHTML"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="CHTML"][display="true"] mjx-math {
+  padding: 0;
+}
+
+mjx-container[jax="CHTML"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="CHTML"][justify="right"] {
+  text-align: right;
+}
+
+mjx-mo {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-stretchy-h {
+  display: inline-table;
+  width: 100%;
+}
+
+mjx-stretchy-h > * {
+  display: table-cell;
+  width: 0;
+}
+
+mjx-stretchy-h > * > mjx-c {
+  display: inline-block;
+  transform: scalex(1.0000001);
+}
+
+mjx-stretchy-h > * > mjx-c::before {
+  display: inline-block;
+  width: initial;
+}
+
+mjx-stretchy-h > mjx-ext {
+  /* IE */ overflow: hidden;
+  /* others */ overflow: clip visible;
+  width: 100%;
+}
+
+mjx-stretchy-h > mjx-ext > mjx-c::before {
+  transform: scalex(500);
+}
+
+mjx-stretchy-h > mjx-ext > mjx-c {
+  width: 0;
+}
+
+mjx-stretchy-h > mjx-beg > mjx-c {
+  margin-right: -.1em;
+}
+
+mjx-stretchy-h > mjx-end > mjx-c {
+  margin-left: -.1em;
+}
+
+mjx-stretchy-v {
+  display: inline-block;
+}
+
+mjx-stretchy-v > * {
+  display: block;
+}
+
+mjx-stretchy-v > mjx-beg {
+  height: 0;
+}
+
+mjx-stretchy-v > mjx-end > mjx-c {
+  display: block;
+}
+
+mjx-stretchy-v > * > mjx-c {
+  transform: scaley(1.0000001);
+  transform-origin: left center;
+  overflow: hidden;
+}
+
+mjx-stretchy-v > mjx-ext {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  border: 0px solid transparent;
+  /* IE */ overflow: hidden;
+  /* others */ overflow: visible clip;
+}
+
+mjx-stretchy-v > mjx-ext > mjx-c::before {
+  width: initial;
+  box-sizing: border-box;
+}
+
+mjx-stretchy-v > mjx-ext > mjx-c {
+  transform: scaleY(500) translateY(.075em);
+  overflow: visible;
+}
+
+mjx-mark {
+  display: inline-block;
+  height: 0px;
+}
+
+mjx-c {
+  display: inline-block;
+}
+
+mjx-utext {
+  display: inline-block;
+  padding: .75em 0 .2em 0;
+}
+
+mjx-mi {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-msub {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+
+mjx-c.mjx-c28::before {
+  padding: 0.75em 0.389em 0.25em 0;
+  content: "(";
+}
+
+mjx-c.mjx-c1D44F.TEX-I::before {
+  padding: 0.694em 0.429em 0.011em 0;
+  content: "b";
+}
+
+mjx-c.mjx-c2C::before {
+  padding: 0.121em 0.278em 0.194em 0;
+  content: ",";
+}
+
+mjx-c.mjx-c1D440.TEX-I::before {
+  padding: 0.683em 1.051em 0 0;
+  content: "M";
+}
+
+mjx-c.mjx-c1D453.TEX-I::before {
+  padding: 0.705em 0.55em 0.205em 0;
+  content: "f";
+}
+
+mjx-c.mjx-c29::before {
+  padding: 0.75em 0.389em 0.25em 0;
+  content: ")";
+}
+
+mjx-c.mjx-c2200::before {
+  padding: 0.694em 0.556em 0.022em 0;
+  content: "\2200";
+}
+
+mjx-c.mjx-c1D460.TEX-I::before {
+  padding: 0.442em 0.469em 0.01em 0;
+  content: "s";
+}
+
+mjx-c.mjx-c1D45C.TEX-I::before {
+  padding: 0.441em 0.485em 0.011em 0;
+  content: "o";
+}
+
+mjx-c.mjx-c1D44E.TEX-I::before {
+  padding: 0.441em 0.529em 0.01em 0;
+  content: "a";
+}
+
+mjx-c.mjx-c2208::before {
+  padding: 0.54em 0.667em 0.04em 0;
+  content: "\2208";
+}
+
+mjx-c.mjx-c7B::before {
+  padding: 0.75em 0.5em 0.25em 0;
+  content: "{";
+}
+
+mjx-c.mjx-c1D45F.TEX-I::before {
+  padding: 0.442em 0.451em 0.011em 0;
+  content: "r";
+}
+
+mjx-c.mjx-c1D452.TEX-I::before {
+  padding: 0.442em 0.466em 0.011em 0;
+  content: "e";
+}
+
+mjx-c.mjx-c1D451.TEX-I::before {
+  padding: 0.694em 0.52em 0.01em 0;
+  content: "d";
+}
+
+mjx-c.mjx-c1D464.TEX-I::before {
+  padding: 0.443em 0.716em 0.011em 0;
+  content: "w";
+}
+
+mjx-c.mjx-c1D456.TEX-I::before {
+  padding: 0.661em 0.345em 0.011em 0;
+  content: "i";
+}
+
+mjx-c.mjx-c1D461.TEX-I::before {
+  padding: 0.626em 0.361em 0.011em 0;
+  content: "t";
+}
+
+mjx-c.mjx-c7D::before {
+  padding: 0.75em 0.5em 0.25em 0;
+  content: "}";
+}
+
+mjx-c.mjx-c1D442.TEX-I::before {
+  padding: 0.704em 0.763em 0.022em 0;
+  content: "O";
+}
+
+mjx-c.mjx-c2264::before {
+  padding: 0.636em 0.778em 0.138em 0;
+  content: "\2264";
+}
+
+mjx-c.mjx-c1D446.TEX-I::before {
+  padding: 0.705em 0.645em 0.022em 0;
+  content: "S";
+}
+</style></head>
+
+                                <body id="tt-body-page">
+                
+                
+
+<div id="wrap">
+	<div id="sidebar" class="mCustomScrollbar _mCS_1 mCS-autoHide"><div id="mCSB_1" class="mCustomScrollBox mCS-dark-thin mCSB_vertical mCSB_inside" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+		<div class="blank"></div>
+		<h1><a href="https://roytravel.tistory.com/">For a better world</a></h1>
+		
+			<div class="widget category"> <!-- Category -->
+				<ul class="tt_category"><li class=""><a href="https://roytravel.tistory.com/category" class="link_tit"> 분류 전체보기 <span class="c_cnt">(334)</span> </a>
+  <ul class="category_list"><li class=""><a href="https://roytravel.tistory.com/category/Artificial%20Intelligence" class="link_item"> Artificial Intelligence <span class="c_cnt">(65)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="https://roytravel.tistory.com/category/Artificial%20Intelligence/%EB%85%BC%EB%AC%B8%20%EB%A6%AC%EB%94%A9" class="link_sub_item"> 논문 리딩 <span class="c_cnt">(5)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Artificial%20Intelligence/%EB%85%BC%EB%AC%B8%20%EA%B5%AC%ED%98%84" class="link_sub_item"> 논문 구현 <span class="c_cnt">(4)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Artificial%20Intelligence/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D" class="link_sub_item"> 머신러닝-딥러닝 <span class="c_cnt">(40)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Artificial%20Intelligence/%ED%99%95%EB%A5%A0-%ED%86%B5%EA%B3%84%ED%95%99" class="link_sub_item"> 확률-통계학 <span class="c_cnt">(10)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Artificial%20Intelligence/%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98%ED%95%99" class="link_sub_item"> 선형대수학 <span class="c_cnt">(2)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Artificial%20Intelligence/%EB%AF%B8%EC%A0%81%EB%B6%84%ED%95%99" class="link_sub_item"> 미적분학 <span class="c_cnt">(3)</span> </a></li>
+</ul>
+</li>
+<li class=""><a href="https://roytravel.tistory.com/category/Computer%20Science" class="link_item"> Computer Science <span class="c_cnt">(177)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="https://roytravel.tistory.com/category/Computer%20Science/%EB%B0%B1%EC%A4%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="link_sub_item"> 백준 알고리즘 <span class="c_cnt">(153)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Computer%20Science/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0" class="link_sub_item"> 자료구조 <span class="c_cnt">(5)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Computer%20Science/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" class="link_sub_item"> 네트워크 <span class="c_cnt">(1)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Computer%20Science/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4" class="link_sub_item"> 데이터베이스 <span class="c_cnt">(2)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Computer%20Science/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88" class="link_sub_item"> 정보보안 <span class="c_cnt">(15)</span> </a></li>
+</ul>
+</li>
+<li class=""><a href="https://roytravel.tistory.com/category/Technology" class="link_item"> Technology <span class="c_cnt">(19)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="https://roytravel.tistory.com/category/Technology/%EA%B3%BC%ED%95%99" class="link_sub_item"> 과학 <span class="c_cnt">(19)</span> </a></li>
+</ul>
+</li>
+<li class=""><a href="https://roytravel.tistory.com/category/Interest" class="link_item"> Interest <span class="c_cnt">(71)</span> </a>
+  <ul class="sub_category_list"><li class=""><a href="https://roytravel.tistory.com/category/Interest/%EB%8F%85%EC%84%9C%EB%85%B8%ED%8A%B8" class="link_sub_item"> 독서노트 <span class="c_cnt">(32)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Interest/%EC%82%AC%EC%9C%A0%EB%85%B8%ED%8A%B8" class="link_sub_item"> 사유노트 <span class="c_cnt">(7)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Interest/%EC%A2%85%EA%B5%90" class="link_sub_item"> 종교 <span class="c_cnt">(2)</span> </a></li>
+<li class=""><a href="https://roytravel.tistory.com/category/Interest/%EA%B8%B0%ED%83%80" class="link_sub_item"> 기타 <span class="c_cnt">(30)</span> </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+			</div>
+			
+			<div class="widget"> <!-- Blog Menu -->
+				<ul>
+  <li class="t_menu_home first"><a href="https://roytravel.tistory.com/" target="">홈</a></li>
+  <li class="t_menu_tag"><a href="https://roytravel.tistory.com/tag" target="">태그</a></li>
+  <li class="t_menu_guestbook last"><a href="https://roytravel.tistory.com/guestbook" target="">방명록</a></li>
+</ul>
+			</div>
+			 <!-- Notice -->
+			
+			<div class="widget">
+				<ul>
+					
+				</ul>
+			</div>
+			
+			
+			<div class="widget"> <!-- Recent Comments -->
+				<ul id="recentComments">
+					<li><a href="https://roytravel.tistory.com/375#comment17648466" title="alpha-traveler〃01.09">항상 잘 보고 있습니다 좋은 하루 되세요 :)</a></li><li><a href="https://roytravel.tistory.com/374#comment17647487" title="아이폰〃01.08">좋은 내용 보고 갑니다.</a></li><li><a href="https://roytravel.tistory.com/370#comment17594481" title="alpha-traveler〃12.12">오늘 첨 봤는데 글쓰는 감각이 장난아니시네요~</a></li><li><a href="https://roytravel.tistory.com/108#comment17543314" title="착한남〃11.03">잘보고갑니다</a></li><li><a href="https://roytravel.tistory.com/357#comment17529958" title="alpha-traveler〃10.25">저랑 관심사가 비슷하시네요 잘 보구 갑니당</a></li>
+				</ul>
+			</div>
+			 <!-- Links -->
+			<div class="widget">
+				<ul>
+					
+				</ul>
+			</div>
+			 <!-- Counter -->
+			<div class="widget counter text-center">
+				<span class="yesterday">394</span> /
+				<span class="today">85</span> /
+				<span class="total">123,445</span>
+			</div>
+			 <!-- Search -->
+			<div class="widget search text-center">
+				
+				<input class="search" placeholder="press enter to search…" type="text" name="search" value="" onkeypress="if (event.keyCode == 13) { try {
+    window.location.href = &#39;/search&#39; + &#39;/&#39; + looseURIEncode(document.getElementsByName(&#39;search&#39;)[0].value);
+    document.getElementsByName(&#39;search&#39;)[0].value = &#39;&#39;;
+    return false;
+} catch (e) {} }">
+				
+			</div>
+			
+		<div class="blank"></div>
+	</div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-dark-thin mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 615px; max-height: 902px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+
+	<div id="content">
+		<div id="content-inner">
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			             
+                 
+<div id="head">
+	<h2><a href="https://roytravel.tistory.com/346">[사이버 보안] 보안공학 종합시험 정리</a></h2>
+	<div class="date">2022. 10. 3. 07:39</div>
+</div>
+
+<div id="body" class="entry">
+	<div class="tag_label">
+	
+		<span><a href="https://roytravel.tistory.com/tag/%EA%B3%A0%EB%A0%A4%EB%8C%80%ED%95%99%EA%B5%90" rel="tag">고려대학교</a>, <a href="https://roytravel.tistory.com/tag/%EB%B3%B4%EC%95%88%EA%B3%B5%ED%95%99" rel="tag">보안공학</a>, <a href="https://roytravel.tistory.com/tag/%EC%A0%95%EB%B3%B4%EB%B3%B4%ED%98%B8%EB%8C%80%ED%95%99%EC%9B%90" rel="tag">정보보호대학원</a>, <a href="https://roytravel.tistory.com/tag/%EC%A2%85%ED%95%A9%EC%8B%9C%ED%97%98" rel="tag">종합시험</a></span>
+		<div class="clear"></div>
+	
+	</div>
+
+	<div class="article">
+	            <!-- System - START -->
+
+<!-- System - END -->
+
+            <div class="tt_article_useless_p_margin contents_style"><p data-ke-size="size16">정보보안학 석사 과정을 졸업한지 1년 쯤 되어가고, 관심분야도 보안에서 딥러닝으로 바뀐지 꽤 오래 되었네요. 불현듯 자기 전 작년 종합시험 준비로 고통받던 때가 떠올라 이 글을 쓰게 됐습니다. 재학 기간 동안 두 번의 시험 기회가 있었고 첫 번째 기회를 날리는 고배를 마신 뒤 절치부심하는 마음으로 정리한 내용입니다. 중간/기말/종합시험 모두에 어느 정도 도움이 되리라 생각합니다. 가급적 논리적 서술이 가능하도록 정의, 배경, 특징, 장점, 단점, 차이점, 방법, 활용, 종류, 목표 등을 고려해 작성하였습니다. 아래에 예상 질문들은 강의 내용을 총 정리하다보니 자연스럽게 시험에서 이런 것을 물어볼 것 같다고 예상한 질문과 답안들입니다. 중간에 예상 답안이 부재한 경우는 2가지 이유입니다. 첫 번째는 교수님께서 매학기 수업마다 조금씩 설명을 더 해주거나 덜 해주는 파트가 있어 듣지 못해 정리할 수 없었던 부분입니다. 두 번째는 얼추 설명은 해주셨지만 정확히 이해 못하고 모호하게 알고 있는 부분은 지웠습니다. 댓글로 추가해주신다면 업데이트 하도록 하겠습니다. 또 틀린 부분이 있다면 지적해주시면 감사하겠습니다. 참고로 아래 내용들은 강의 요약 내용을 바탕으로 작성한 것이므로 포함하지 않는 내용과 설명들이 있습니다. 원본이 필요할 경우 댓글 남겨주시면 보내 드리겠습니다. 전체 글 내용은 고려대학교 정보보호대학원 김승주 교수님 보안공학 강의 내용을 기반으로 작성되었습니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>보안공학이란 무엇인가?</b></p>
+<p data-ke-size="size16">H/W와 S/W를 만드는 개발 단계인 요구사항 분석, 설계, 구현, 배포, 유지보수에 이르기 까지 각 단계마다 모두 보안을 고려하고 제품을 판매하는 단계에서도 보안내재화가 이루어졌는지 제대로 이루어졌는지 확인하는 것이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>보안공학의 목표는 무엇이고 왜 보안공학은 어려운가?</b></p>
+<p data-ke-size="size16">보안공학은 trusthworthy(dependable)한 시스템을 만드는 것을 목표로 한다. 보안공학은 random한 에러를 다루는 소프트웨어공학과 달리 random한 에러와 함께 의도적으로 발생한 intentional 에러도 함께 다루기 때문에 더 어렵다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>보안공학의 핵심인 Define &amp; Design Approach, Shift left testing, traceability는 무엇인가?</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><b>define &amp; design approach</b>: 보호해야할 자산을 정확하게 식별한 다음, 자산의 중요도와 이에 따른 요구사항을 정의하고 설계하는 것을 의미한다.</li>
+<li><b>shift-left testing</b><span style="font-family: -apple-system, BlinkMacSystemFont, &#39;Helvetica Neue&#39;, &#39;Apple SD Gothic Neo&#39;, Arial, sans-serif; letter-spacing: 0px;">: 매 개발 단계마다 testing을 수행 함을 의미한다. shift-left testing에서 보안 담당자의 역할은 </span><span style="font-family: -apple-system, BlinkMacSystemFont, &#39;Helvetica Neue&#39;, &#39;Apple SD Gothic Neo&#39;, Arial, sans-serif; letter-spacing: 0px;">개발자가 testing에 사용할 수 있는 도구를 만들어 공급하고, </span><span style="font-family: -apple-system, BlinkMacSystemFont, &#39;Helvetica Neue&#39;, &#39;Apple SD Gothic Neo&#39;, Arial, sans-serif; letter-spacing: 0px;">개발자가 진행한 testing에 대해 적절성 여부를 검증하는 작업을 진행한다. 이러한 shift-left testing은 자동화가 가능하고, 이른 단계에서 testing을 진행할 수 있다는 장점이 있다.</span></li>
+<li><b>traceability</b><span style="font-family: -apple-system, BlinkMacSystemFont, &#39;Helvetica Neue&#39;, &#39;Apple SD Gothic Neo&#39;, Arial, sans-serif; letter-spacing: 0px;">:&nbsp;</span></li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>만약 보안공학에서 보안내재화 개발 프로세스를 통해 요구사항분석부터 설계, 구현까지 완벽히 수학적으로 다 증명돼도 모의해킹이 필요한가?</b></p>
+<p data-ke-size="size16">모든 것을 수학적으로 증명했다 하더라도 모의해킹이 필요하다. 수학적 증명은 전제조건을 가지고 있으며 이 전제조건이 제대로 지켜지고 있는지를 검증하기 위해서는 모의해킹이 반드시 필요하다. 이는 수학적 증명과 모의해킹이 상호보완 하는 관계라고 볼 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>바람직한 S/W 요구사항 도출 조건의 6가지와 그 특징은 무엇인가?</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Unambiguity: 다른 사람이 요구사항을 검토한 결과는 동일해야 하며 요구사항에 모호함이 없어야 한다.</li>
+<li>Prioritization: 요구사항의 구현과 관련하여 우선순위가 부여되어야 한다.</li>
+<li>Verifiability: 요구사항이 제품에 적절하게 구현되어야 하고, 검증하기 위한 Security Testing Requirement도 함께 도출되어야 한다.</li>
+<li>Completeness: 모든 필요한 요구사항이 전부 도출되어야 한다. (지정된 모든 요구사항은 전달해야 하는 기능을 완전히 설명해야 한다)</li>
+<li>Correctness: 해당 요구사항은 자체 모순을 가지거나 충돌되지 않고 그 기능을 정확하게 설명해야 한다.</li>
+<li>Feasibility: 해당 요구사항은 자원 및 제약조건에서 실행 가능해야 한다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>보안성 평가에서 TCSEC의 보안등급 중 A2는 왜 사용하지 않는가?</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>TCSEC을 처음 만들 당시 A2 등급인 Code Proof(Code Assurance)까지 넣으려고 하였다. 하지만 TCSEC을 제작자는 Code Assurance의 입증이 어렵다고 판단하여 마지막에 A2를 제거하고 A1만 남겼다. Code Assurance는 Software testing과 Software verification으로 구성되는데, 특히 software testing에서 만약 소스코드가 대략 10,000줄이 이상 넘어가게 된다면 포인터 등으로 인한 복잡성 때문에 수학적 안정성 입증이 어려워지기 때문이다.&nbsp;</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>TCSEC의 단점을 서술하시오</b></p>
+<p data-ke-size="size16">보안등급평가에 있어 Assurance와 Functionality가 서로 분리되어 있지 않아, High Assurance임에도 불구하고 낮은 보안등급으로 평가하는 결점이 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>보안성 평가 표준인 CC, CAVP, CMVP, C&amp;A, RMF A&amp;A, DITSCAP에 대해 설명하시오.</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>CC: (개념) 보안성 평가와 관련해서 가장 권위있는 국제 표준이다. 보안성 평가 국제표준(ISO/IEC 15408)의 공통평가기준(CC)에 따라 정보보호시스템의 기능 및 취약성을 평가/인증하는 제도이다. (배경) 미국의 TCSEC으로부터 유럽연합의 ITSEC, 캐나다의 CPCPEC, FC 등이 만들어지게 되었고 이를 만든 각국가의 평가기관들은 국가적으로 독립된 평가 기준을 통합하는 프로젝트를 시작하였고 이를 CC 프로젝트라 하였다. CC 프로젝트는 TCSEC의 단점을 보완하고 기존의 평가 기준들간의 개념적/기술적 차이를 통합하여 국제 표준화를 만들자는 목표로 추진되어 만들어 졌다. (목적) CC인증은 평가과정에서 IT제품(H/W, F/W, S/W)에 적용되는 보안 기능과 보증수단에 대한 공통의 요구 사항들을 제시한다. 이를 통해 독립적으로 수행된 보안성 평가의 결과들을 비교할 수 있도록 한다. 평가 결과는 소비자가 IT 제품이 그들의 보안 요구를 충족시키는지 결정하는데 도움을 줄 수 있다.</li>
+<li>CAVP (Cryptographic Algorithm Validation Program): 암호 알고리즘을 중심으로 제대로 구현되었는지를 검증한다.</li>
+<li>CMVP (Cryptographic Module Validation Program): 특정한 암호 모듈이 특정한 암호 알고리즘을 올바르게 구현했느냐에 대한 구현 적합성을 시험/인증 한다. CMVP와 CC의 공통점은 제품이 요구사항분석단계부터 설계, 구현에 이르기까지 보안내재화 프로세스를 충실히 따랐는가를 본다. 이것이 발전해서 C&amp;A 제도가 되었다.</li>
+<li>C&amp;A (Certification &amp; Accrediation):&nbsp;</li>
+<li>RMF A&amp;A: 2015년 DoD Cyber Strategy를 발표했고, 이 내용은 전산시스템 뿐만 아니라 F35 스텔스 전투기나 무인 드론과 같은 첨단 무기체계들도 보안내재화 개발 프로세스를 적용하라는 것을 요구한 것이다. RMF A&amp;A는 이러한 요구사항을 충족시키고 실제로 준수하였는지 평가하기 위해 만들어진 표준이다.</li>
+</ul>
+<p data-ke-size="size16">(다소 설명이 빈약하다 생각들어 몇몇 부분은 추가되면 좋을 것 같습니다)</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>CAVP, CMVP, CC, DITSCAP, NIST C&amp;A, RMF A&amp;A의 정의 및 비교와 국내외 정책비교를 서술하라.</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>EAL 보안성평가에서 낮은등급에서 높은등급이 되기 위해 필요한 조건은?</b></p>
+<p data-ke-size="size16">Requirements, functional specification, HLD, LLD, implementation에 대해 formal method로 정형명세화 하여 수학적으로 만족함을 입증하여야 한다.</p>
+<p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-origin-width="946" data-origin-height="702"><span data-url="https://blog.kakaocdn.net/dn/bzgqoT/btrNANr5KbS/N6WAtSPAgYSo6KtVME7hV0/img.png" data-lightbox="lightbox"><img src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbzgqoT%2FbtrNANr5KbS%2FN6WAtSPAgYSo6KtVME7hV0%2Fimg.png" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" width="656" height="487" data-origin-width="946" data-origin-height="702"></span></figure>
+<p></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Information Security, Information Assurance or Cybersecurity의 차이를 서술하시오</b></p>
+<p data-ke-size="size16">핵심 차이는 trusthworthy라고 할 수 있다. information security는 컴퓨터와 컴퓨터에 들어있는 전자적 정보를 지키는 것을 의미하며, cybersecurity는 사이버공간과 연동된 모든것을 지키는 것을 의미하는데 여기에는 digital과 non-digital 정보도 함께 포함된다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>걸프전이 최초의 Information Assurance인 이유는 무엇인가?</b></p>
+<p data-ke-size="size16">이 질문에 대해 답을 정리하진 못했습니다. 다만 이 예상 질문과 관련한 부분적인 내용들을 기술하면 다음과 같습니다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>걸프전의 맥락에서 사용되어 정리하고 가야할 용어인 information security와 cybersecurity가 있다. 두 용어의 큰 차이점이자 추구하는 목표는 trustworthy이다.
+<ul style="list-style-type: circle;" data-ke-list-type="circle">
+<li>Information Security: 컴퓨터와 컴퓨터 속에 들어 있는 전자적인 데이터를 보호하겠다라는 의미를 가진다.</li>
+<li>Informaton Assurance or Cybersecurity: 사이버공간과 연동된 모든 것을 보호하겠다라는 의미를 가지며, 그 모든 것은 전자적인 형태(digital)의 데이터여도 되고 전자적인 형태(non-digital)가 아니여도 된다.</li>
+</ul>
+</li>
+<li>걸프전은 정보보증(Information Assurance)이라는 패러다임 shift를 발생시킨 선구자 역할을 했다는 점에서 의미가 있다.</li>
+<li>걸프전에서는 패러다임 shift가 information security에서 information assurance로 바뀌었고, 이는 적의 정보는 교란시키고 내 정보를 유지시키는 것이 중요하다고 인식하게 되면서 이를 위한 목표인 trustworthy를 달성하기 위함이다.&nbsp;</li>
+<li>걸프전을 통해 Information Assurance가 중요해졌다. 이는 원할때 Access 가능해야 하고, 그 정보는 항상 relability와 security를 유지 가능해야 함을 의미한다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Risk Management란 무엇이고, 구성요소와 이에 대한 정의는 무엇인가?</b></p>
+<p data-ke-size="size16">Risk Management는 기본적으로 Risk를 제거하는 것이 아니라 줄이는 것이다. 하지만 Risk를 줄인다하더라도 잔존 위협(Residual Risk)가 남아있게 된다. 이 때 이 잔존 위협을 어떻게 잘 관리할지 고려하는 것을 Risk Management라고 한다. 참고로 이를 위해선 자산별, 중요도 별 등급화가 되있어야 Risk를 측정할 수 있다.&nbsp;Risk Management 방법은 크게 4가지로, Risk Transfer, Risk Avoidance, Risk Reduction, Risk Retention이 존재한다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Risk Transfer: 위협을 보험사와 같은 제 3자에게 전가하는 것을 의미한다.</li>
+<li>Risk Avoidance: 위협을 회피하는 것을 의미하는 것으로 단적 예로 스마트TV에 카메라 떼는 것과 같다.</li>
+<li>Risk Reduction: 보안 대책을 만들어 위험을 감소시키는 것을 의미한다.</li>
+<li>Risk Retention: 위험의 확률이 낮으면 위험을 안고 가는 것을 의미한다.</li>
+</ul>
+<p data-ke-size="size16">결과적으로 이를 통해 Risk Avoidance를 제외하고 어떤 것이 ROI가 높은지 비교하여 그에 맞는 대응책을 세운 뒤, 높은 리스크부터 낮은 리스크로 대응해야 한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Risk Assessment의 특징과 그 한계를 설명하시오.</b></p>
+<p data-ke-size="size16">Risk Assessment는 quantitative risk analysis (정성적), qualitative risk analysis (정량적)로 크게 둘로 나뉜다. 리스크 분석은 정량적으로 분석하는 것이 객관성을 담보할 수 있다는 장점이 있지만 적용하고자 하는 사람의 탄탄한 수학적 이론이 뒷받침 되어야 하므로 실적용엔 무리가 있다. 따라서 무기체계분석이나 자동차보안성평가와 같은 필드에서는 정성적 분석 방법을 사용하는 것이 특징이다. (Risk = Probability * Damage Potential)</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Goldwasser의 Semantic security와 Shannon의 Perfect Secrecy의 차이점을 서술하시오.</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Shannon's perfect secrecy : 무한한 컴퓨팅 자원을 가진 passive attacker로 부터 암호문에서 평문에 대한 어떠한 정보(단, 1bit라도)도 누출되서는 안된다.</li>
+<li>Goldwasser's semantic security : 유한한 컴퓨팅 자원을 가진 passive attacker로부터 암호문에서 평문에 대한 어떠한 정보(단, 1bit라도)도 노출되서는 안된다.Ex</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>MDTD(Model Driven Test Design)가 test case create에 도움이 되는 이유는?</b></p>
+<p data-ke-size="size16">testing하려는 대상을 작은 task 단위로 모델링하여 해당 task에 집중적으로 testing할 수 있기 때문이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Model Checking 이론을 바탕으로 Code Assurance를 달성하는 방법 및 프로세스를 상세히 서술하시오.</b></p>
+<p data-ke-size="size16">프로그램을 model로 만들고 model checker에 requirement(ex: correctness property)를 넣었을 때 model checker에서 model이 requirement를 충족하는지에 대한 여부를 Yes/No로 알려준다. 만약 No의 경우에는 counter measure도 함께 알려준다. 결과적으로 model checker를 통해 해당 프로그램의 model이 requirement를 충족하는지 판단한다. (Model Checker는 완전 자동화가 가능하다는 장점이 있고, Automatic Theorem Prover에 비해 적용 범위가 작다는 단점이 있다.)</p>
+<p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-origin-width="715" data-origin-height="294"><span data-url="https://blog.kakaocdn.net/dn/rH3m0/btrNzJ4vPNe/pDrfewvEfHaGYzNcvVwIF1/img.png" data-lightbox="lightbox"><img src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/img(1).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FrH3m0%2FbtrNzJ4vPNe%2FpDrfewvEfHaGYzNcvVwIF1%2Fimg.png" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" width="550" height="226" data-origin-width="715" data-origin-height="294"></span></figure>
+<p></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>데이터 거버넌스에 대해 설명하시오</b></p>
+<p data-ke-size="size16">데이터거버넌스의 핵심은 데이터 사일로(칸막이) 문제로 인해 도입된 개념으로 데이터 활용을 위한 전사적인 경영체계라 할 수 있다. 조직은 이러한 데이터 거버넌스를 통해 데이터 활용 계획과 데이터 보호 계획을 수립하여 활용도를 극대화 시켜서 궁극적으로 데이터 사일로를 제거하는 것을 목표로 한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>14가지 Security Design Principle과 각각이 의미하는 바를 서술하시오.</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Least Privilege: 사람 또는 시스템에게 부여할 최소한의 권한을 부여하는 것을 의미한다. 하지만 이 최소권한의법칙을 지키기 위해 보안레벨을 사용자와 오브젝트 사이에 어떻게 설정해야 하는가는 쉽지 않다.</li>
+<li>Fail-Safe Default: 두 가지 의미를 가진다. 첫 째는 명시적 허용이 아니면 거부를 의미한다. 예를 들어 방화벽 룰셋에 명시되지 않은 패킷이 있을 경우 drop하는 것과 같다. 둘 째는 만약 프로그램이 비정상 상태로 빠질 경우, 바로 직전에 안전했던 상태로 돌아가는 것을 의미한다. 이를 통해 프로그램을 항상 안전한 상태로 유지시킬 수 있게 한다. 예를 들어 윈도우 블루스크린이 표시되어 먹통이 되는 상태로 빠지지 않게 하는 것과 같다.</li>
+<li>Economy of Mechanism: H/W, S/W를 개발할 때 가능한한 시스템을 단순하고 작은 사이즈로 설계하고 구현해야 함을 의미한다. 단순하고 작은 사이즈로 설계하는 것은 모듈화 설계와 같다. 장점은 요구사항을 달성하고 있는지 검증이 쉬워진다. 심플할수록 assurance level이 높<span style="color: #333333; background-color: #ffffff;">아진다. simple and small이 의미하는 바는 검증하기 쉽도록하여 assurance level을 극대화 시킨다는 것이 핵심이다.</span></li>
+<li>Complete Mediation: 자원에 접근할 때 마다 반드시 그 권한에 대해 확인해야하는 것을 의미한다. 모든 접근을 전부 확인하는 것을 zero-trust라고 한다. 하지만 실질적으로 모든 접근에 대한 확인은 부하로 인한 속도저하가 심해서 구현하기 어려운 것이 특징이다.</li>
+<li>Design by Contract: 어떤 일을 처리할 때 항상 확인된 인터페이스를 통해서만 해당 일을 처리해야함을 의미한다. 예를 들어 중요한 시스템일수록 사전 정의된 인터페이스 또는 사전 정의된 프로토콜을 통해서만 중요 자원에 접근할수 있도록 하는 것을 의미한다.</li>
+<li>Open Design: 어떤 시스템을 만들었을 때 그 시스템의 설계도나 소스코드가 공개되어도 안전도가 유지될 수 있어야 한다는 것을 의미하고, 시스템의 안전성을 설계도나 소스코드의 폐쇄성에 의존하지 않아야 한다는 것을 의미한다. 예를 들어 군에서 같은 모듈을 사용하는 무전기를 분실하게 되면 리버싱하여 소스코드를 알아낼 수 있기 때문에 시스템을 만들때 설계도나 소스코드가 공개됐다고 전제한 다음 시스템을 만들라는 것이다. 그래서 만약 안전하다면 오픈 디자인 원칙에 충실하다 할 수 있다.&nbsp;동의어는 Kerckhoff's 법칙이라고도 하며, 반대말로 Security through Obsecurity 또는 Security by Obsecurity라고도 한다.&nbsp;</li>
+<li>Seperation of Prvilege: 중요시스템에 접근할 때는 그 권한을 분산 또는 분리해야 함을 의미한다. 예를 들어 핵무기를 동작시킬 때 두 사람의 암호를 동시에 입력해야 작동하는 것과 같다.</li>
+<li>Least Common Mechanism: 시스템의 공통 모듈을 최소화해서 활용해야 함을 의미한다. 이는 보안에서 한 부분에 문제가 생겼을 때 다른 부분으로 파급되는 것을 최소화하는 것이 중요하기 때문이다. 하지만 현실적용에는 어려운 부분이 있는데 이는 공통모듈을 쓰면 생산성은 높아지나, Economy of mechanism의 개념과 정면으로 위배되는 특징이 있기 때문에 시스템을 만들다보면 이 개념에 충실하기 쉽지 않은 것이 특징이다.</li>
+<li>Psychological Acceptability: Usable Security라고도 부르며 이는 시스템이 사용하기 편리해야 함을 의미한다.</li>
+<li>Defense in Depth: 보안 시스템을 둘 때 계층을 두어 한 계층이 뚫히더라도 다음 계층이 막아줄 수 있도록 시스템을 설계해야 함을 의미한다.</li>
+<li>Effective Logging: 로그를 잘 남겨야 함을 의미하는 것으로, 개인정보보호법으로 인해 로그에 어떤 정보가 들어가면 안되는지 또한 중요해진 것이 특징이다.</li>
+<li>Build In, Not Bolt On: 시스템을 개발한 다음 보안제품을 사서 쓸 것이 아니라, 처음 만들 때 보안이 Build In되도록 만들어야 함을 의미한다.</li>
+<li>Design for Updating: 업데이트를 어떻게 할 것인가를 설계해야 함을 의미한다.</li>
+<li>Centralized vs Decentralized: 중앙화 시킬 것인지 분산화 시킬 것인지를 의미한다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>What is 'sound'?</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Threat Modeling의 개념과 절차적 특징을 서술하시오.</b></p>
+<p data-ke-size="size16">Threat Modeling은 목표 시스템에 대한 어떤 위협요소가 없는지를 공격자의 입장에서 체계적으로 분석할 수 있는 방법론을 의미한다. 이를 통해 목표 시스템의 attack surface 식별, 얼마만큼의 위협이 발생하는 가를 측정할 수 있다. 또한 보안대책과 보안대책에 대한 테스트와 같은 일련의 청사진을 도출해낼 수 있다는 것이 특징이다. 전반적인 프로세스는 다음과 같다.</p>
+<ol style="list-style-type: decimal;" data-ke-list-type="decimal">
+<li>DFD를 통해 우선적으로 모델링한 후 지켜야할 자산을 중요도 별로 우선순위를 식별한다.</li>
+<li>분석대상 시스템에 대해 취약점정보와 관련된 attack library를 수집한다.</li>
+<li>공격자의 관점에서 STRIDE를 이용하여 어떤 element에 취약점이 매핑될 수 있는지를 확인한다.</li>
+<li>매핑된 정보를 기반으로 공격시나리오를 생성 후 attack tree로 표현한다.</li>
+</ol>
+<p data-ke-size="size16"><b>SRIDE: </b>모델링된 시스템에서 element 별로 공격자의 입장에서 취약점을 도출할 수 있는 보안위협모델링 방법이다. Spoofing(위장), Tampering(변조), Repudiation(부인), Information DIsclosure(정보유출), Denial of Service(서비스거부), Elevation of prvilege(권한상승)으로 구성되어 있다. SRIDE에는 분석 방법이 2가지로 stride-per-element와 stride-per-interaction이 있다. stride-per-element는 element 별로 S,T,R,I,D,E 공격이 발생할 수 있을지 검증하는 것을 의미하고 stride-per-interaction은 trust boundary를 넘나드는 데이터 흐름들에 대해 중점적으로 분석하는 방법을 의미한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>Attack Tree</b>: 수집한 취약점 정보를 엮어 공격시나리오화 시킬 수 있는 방법으로, 하나의 목표 별로 하나의 Attack Tree가 만들어지는 것이 특징이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>DREAD</b>: DREAD는 5가지 항목으로 구성되어 있고 각각은 다음과 같다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Damage Potential: 공격자가 굉장히 민감한 데이터를 탈취하거나 파괴할 수 있음을 의미한다.</li>
+<li>Reproducibility: Timing winodow가 크거나 작음을 의미하는 것으로, Timing window가 작은 예시로는 컴퓨터가 부팅될 때만 공격이 가능하고 Timing winodw가 큰 예시로는 컴퓨가 켜져 있으면 언제든 가능할 때를 의미한다.</li>
+<li>Exploitability: 공격 프로그램으로 만들기가 얼마나 쉬운가를 의미한다.</li>
+<li>Affected Users: 공격으로부터 영향을 받는 사용자가 얼마나 많은가를 의미한다.</li>
+<li>Discoverability: 해당 취약점을 얼마나 발견하기 쉬운가를 의미한다.</li>
+</ul>
+<p data-ke-size="size16">Risk score = DREAD/5이다. 이러한 Risk score의 단점은&nbsp;절대적이지 않고 사람마다 상대적인 것이다. 따라서 2010년 이후 MS에선 더이상 사용하지 않고, security response center bulletin ratings를 사용해 사람마다 오차가 생기는 것을 막고자 하였다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>LINDDUN을 설명하시오.</b></p>
+<p data-ke-size="size16">LINDDUN은 DFD를 작성한 뒤 개인정보보호의 관점으로 보안위협식별을 수행하는 방법이다. LINDDUN을 이루는 구성요소와 이에 대한 설명은 아래와 같다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Linkability:&nbsp;</li>
+<li>Identifiability:&nbsp;</li>
+<li>Non-repudiation:&nbsp;</li>
+<li>Detectability:&nbsp;</li>
+<li>Disclosure of Information:&nbsp;</li>
+<li>Unawareness:&nbsp;</li>
+<li>Non-compliance:&nbsp;</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>TARA를 설명하시오.</b></p>
+<p data-ke-size="size16">Threat Assessment and Remediation Analysis로 2011년 MITRE에서 만들어진 것으로, 국가의 지원을 받는 해커들이 있다는 전제하에 위협모델링을 어떻게 할 수 있을까를 위해 만들어졌다. 일반적인 해커와 달리 국가의 지원을 받는 해커는 기존의 Threat Modeling을 할 수 없는데 이는 투입비용의 한계가 없기 때문이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Structured Threat Assessment Process란 무엇인가?</b></p>
+<p data-ke-size="size16">핵심은 모의해킹과 위협모델링(Threat modeling)을 합쳐서 수행하는 것을 의미한다.&nbsp;</p>
+<p data-ke-size="size18">&nbsp;</p>
+<p data-ke-size="size18"><b>Formal Method의 특징을 서술하시오</b></p>
+<p data-ke-size="size16">어떤 시스템에 대한 요구사항을 수학적 기법을 이용하여 요구사항을 정확하게 기술하고 그 요구사항이 제대로 달성되었는지를 검증하는 것을 의미하는 것으로, 크게 formal specification과 formal verification으로 구성된다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Security Policy와 Security Policy Modeling의 개념과 차이점을 서술하시오.</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>security policy는 security requirement의 집합으로, 어떤 것을 보호해야하고 그것을 어떻게 보호할 수 있을까를 의미한다.</li>
+<li>security policy modeling은 좁은 의미로는 security policy를 정형명세로 기술해둔 것을 의미하고, 넓은 의미로는 security policy를 정형명세로 기술하고 그 요구사항이 제대로 충족되었는지를 검증까지 하는 것이다. 검증에는 두 가지 의미가 포함된다. requirement 간의 모순점이 없는지를 검증하고, 설계도가 요구사항을 전부 반영하여 제대로 설계되었는지를 검증한다.</li>
+<li>또한 보안성평가의 국제표준인 CC을 확인하면 EAL1~EAL7이 있는데 EAL4까지는 security policy를 제출할 것을 요구하나 EAL5부터는 security policy model을 제출할 것을 요구한다. 여기서 model은 정형명세로 제출하는 것을 의미한다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>DAC의 개념, 특징, 장단점 등에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">DAC은 임의적 접근통제정책을 의미하는 것으로 데이터의 소유주가 데이터에 접근가능한 권한을 결정할 수 있고, 운영체제에 의해 시행되는 것이 특징이다. 장점으로는 필요한 사람에게 권한을 부여할 수 있는 최소권한법칙을 달성하기 쉽고 협업이 편하다는 장점이 있다. 반면 카피에 취약한 구조로 내가 권한을 부여했던 사람이 다시 다른 사람에게 데이터에 접근하는 권한을 부여할 수 있다는 것이 단점이다. 따라서 군에서는 이를 사용할 수 없는데 이에 대안으로 만들어진 것이 강제적 접근정책인 MAC이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>MAC의 개념, 특징, 장단점 등에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">MAC은 강제적 접근통제정책을 의미하는 것으로 주체와 객체의 보안등급에 따라 허가 또는 제한하는 것이 특징이다. 중앙집중형으로 엄격한 보안을 제공할 수 있는 것이 장점이나 모든 접근에 대해 확인해야 하므로 성능 저하가 발생할 수 있다는 단점이 있다. 또한 최소권한의법칙을 충족하지 못한다는 단점이 있고, 이 때문에 보안레벨로만 접근권한을 통제하지 않고 Compartment의 개념을 추가하여 최소권한의법칙을 달성하고자 하는 MLS 정책이 만들어졌다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>BLP 모델의 개념, 특징, 장단점 등에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">벨과 라파듈라는 MLS 정책또한 충분하지 않기 때문에 Define and Design Approach를 해야 한다고 주장하며 1973년 BLP 모델을 제시하였다. 가장 먼저 달성해야할 것을 정의하고, 접근통제정책이 올바르게 시행되려면 SS-Property, *-Property가 만족해야되어야 한다고 하였다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>SS-Property (Simple Security Property): 기존의 MLS의 특징인 사용자가 가진 보안등급과 compartment의 범위가 접근하려고 하는 object의 보안등급과 compartment 범위보다 커야지만 object에 접근할 수 있음을 의미한다.</li>
+<li>*-Property (Start Property): 기존 MLS를 충족하는 시스템은 SS-Property만 충족한다는 단점을 보완하기 위해 나온 개념으로 subject가 SS-property를 만족했다는 전제하에 보안등급이 높은 object에서 데이터를 읽고 낮은 등급의 object에 쓰면 안된다는 것을 의미한다. 어떤 것을 충족하고 어떤 것을 충족하지 않는지를 명확히 표현하는 것이 중요하다는 것을 보였다는 점에서 의의가 있는 것도 특징이다.</li>
+</ul>
+<p data-ke-size="size16">BLP 모델은 security property를 기밀성 관점에서만 고려하기 때문에 무결성 관점을 고려하지 못한다는 단점이 있고, Covert Channel에 취약하다는 단점이 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>BLP 모델에서 권한이 높은 프로세스와 권한이 낮은 프로세스간의 통신 방법은 무엇인가?</b></p>
+<p data-ke-size="size16">권한이 높은 프로세스가 권한이 낮은 프로세스와 통신을 해야할 때가 있지만 권한이 높은 곳에서 낮은 곳으로의 데이터가 쓰이는 것을 막았기 때문에 데이터를 전달할 수 없다는 단점이 있다. 이를 해결하기 위한 대안이 2가지가 있는데 첫 번째는 subject security level을 순간적으로 낮추는 방법이 있고, 두 번째는 *-Property를 위반해도 되는 Trusted subject group을 생성하여 서로간의 등급이 다르더라도 데이터를 주고 받을 수 있도록 하는 방법이 있다. 첫 번째 방법을 실제로 구현한 것이 MULTICS이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>McLean이 BLP 모델에서 비판한 평정속성은 무엇을 의미하는가?</b></p>
+<p data-ke-size="size16">Tranquility(평정속성): 시스템이 한 번 세팅되면 사용자들의 권한은 바뀌지 않음을 의미한다. 벨과 라파듈라는 BLP 모델의 전제를 평정속성으로 하였지만 McLean으로부터 전제조건이 위반되었다고 지적하였다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>BLP 모델에서 주어진 formal method를 참고하여 SS-Property를 표현하시오.</b></p>
+<p data-ke-size="size16">SS Property = No Read Up</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>A state <mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="0" style="font-size: 117.6%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mi>M</mi><mo>,</mo><mi>f</mi><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container> satisfies the SS-Property if
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="1" style="font-size: 117.6%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-n"><mjx-c class="mjx-c2200"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D460 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D45C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">∀</mi><mo stretchy="false">(</mo><mi>s</mi><mo>,</mo><mi>o</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo><mo>∈</mo><mi>b</mi><mo>,</mo></math></mjx-assistive-mml></mjx-container> such that <mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="2" style="font-size: 117.6%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c7B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D451 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D464 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c7D"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>∈</mo><mo fence="false" stretchy="false">{</mo><mi>r</mi><mi>e</mi><mi>a</mi><mi>d</mi><mo>,</mo><mi>w</mi><mi>r</mi><mi>i</mi><mi>t</mi><mi>e</mi><mo fence="false" stretchy="false">}</mo></math></mjx-assistive-mml></mjx-container></li>
+<li><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="3" style="font-size: 117.6%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.06em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D442 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2264"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.06em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D460 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>f</mi><mi>O</mi></msub><mo stretchy="false">(</mo><mi>o</mi><mo stretchy="false">)</mo><mo>≤</mo><msub><mi>f</mi><mi>S</mi></msub><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container></li>
+</ul>
+a subject can only observe objects of lower classification.</li>
+</ul>
+<p data-ke-size="size16">read 또는 write를 하고 있는 모든 subject와 object에 대해 object의 보안등급이 subject의 보안등급보다 낮으면 모든 action은 read 또는 write이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>BLP 모델에서 주어진 formal method를 참고하여 *-Property를 표현하시오.</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>BiBa 모델의 개념, 특징, 장단점 등에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">BLP 모델이 나온 뒤 기밀성만 다룬다는 단점을 보완하기 위해 무결성 관점을 다루기 위해 나오게 된 것으로 BLP 모델과 logical dual이라 할 수 있다. 무결성 관점에서는 정보의 흐름이 높은 곳에서 낮은 곳으로 가야한다. BLP 모델과 동일하게 SS-property와 *-Property를 동일하게 주장하였다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>SS- property (Read up)
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>subject의 integrity level이 object의 integrity level보다 높거나 같아야 데이터를 읽을 수 있음을 의미한다.</li>
+</ul>
+</li>
+<li>*-property (Write down)
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>subject의 integrity level이 object의 integrity level보다 높거나 같아야데이터를 쓸 수 있음을 의미한다.</li>
+</ul>
+</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>클락 윌슨의 상용 컴퓨터 시스템과 군 전용 시스템에 대한 비교 논문의 의의를 서술하시오.</b></p>
+<p data-ke-size="size16">1983년 클락윌슨이 상용컴퓨터시스템의 보안정책과 군에서 쓰는 보안정책의 비교논문을 낸 바 있다. 내용의 핵심은 군에서는 Integrity가 중요하지 않을지 모르나 상용시스템에서는 Confidentiality보다 Integrity가 훨씬 중요하기 때문에 Integrity와 관련한 security requirement를 명확히 정의하고 디자인하는 것이 중요하다고 주장하였다. 이 논문은 사람들이 접근통제정책이 confidentiality 뿐만 아니라 Integrity도 중요하다고 생각하게 되었다는 점에서 의의가 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Clark-Wilson Model을 설명하시오</b></p>
+<p data-ke-size="size16"><b>가장 큰 특징 &amp; 종류 및 개념</b></p>
+<p data-ke-size="size16">Clark-Wilson 모델의 가장 큰 특징은 Well formed transaction을 정의했다는 것이고 이는 절차가 잘 정의된 프로세스를 의미한다.</p>
+<p data-ke-size="size16">Clark-Wilson Model은 CDIs, UDIs, TP, IVPs의 4가지 요소로 구성된다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>CDIs: Contrained Data Items의 약자로 Integrity가 중요한 데이터셋을 의미한다.</li>
+<li>UDIs: Unconstrained Data Items의 약자로 Integrity가 중요하지 않은 데이터셋을 의미한다.</li>
+<li>TP: Transformation Procedures로 일종의 업무 매뉴얼을 의미하는 것으로 업무 매뉴얼에 따라 절차가 엄격히 정의된 프로세스를 통해서만 접근 가능한 것이 특징이다. 예컨데 CDIs에 접근하려는 USER는 반드시 TP를 통해서만 접근해야 한다.</li>
+<li>IVPs: Integrity Verification Procedures의 약자로, 주기적으로 CDIs의 무결성이 올바르게 지켜지고 있는지를 검증한다.</li>
+</ul>
+<p data-ke-size="size16">이러한 Clark-Wilson 모델의 예는 은행시스템이 있다. 은행에서 돈과 관련된 모든 데이터는 CDIs에 해당하고 이외의 데이터는 UDIs에 해당한다. TP는 입금, 출금, 계좌이체와 같이 명확히 정해진 절차가 있고 이 절차에 따라 움직이는 것을 의미한다. 그리고 어제 은행이 가지고 있던 돈에서 오늘 들어온 돈을 더하고 나간 돈을 빼는 것과 같이 정기적으로 검증과정을 거치는 것을 IVPs라고 한다.</p>
+<p data-ke-size="size16">Clark-Wilson 모델은 크게 두 개의 업적을 가진다. 첫 번째는 상용시스템에서 Integrity가 중요할 수 있음을 강조했다는 점이다. 두 번째는 기존 BLP, Biba모델은 사용자가 데이터에 접근한다 생각하였지만 Clark-Wilson은 사용자는 프로그램(TP)에 접근하고 프로그램이 데이터에 접근한다고 하였다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>HRU (Harrison-Ruzo-Ullman) 모델에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">HRU 모델은 BLP 모델의 전제조건이었던 평정속성을 위반했다는 McLean에 비판에 의해 권한이 바뀌어도 보안을 유지할 수 있는 방안을 연구한 모델이다. 동작원리는 권한을 요구하는 요청이 올 경우 임시로 matrix를 변경해보고 state가 잘 유지되는지를 검증한다. 예를 들어 matrix를 바꿨을 때도 기존과 동일하게 SS-property가 충족되는지를 체크하는 것이다. 충족된다면 바꾸고 충족되지 않으면 바꾸지 않는다는 것이 기본 개념이다. 하지만 HRU 모델은 state가 잘 유지되는지를 체크하는 것이 쉽지 않다는 단점이 있다. 따라서 HRU 모델에서는 제약조건을 추가하였다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Monotonic protection system: destory나 delete 명령이 없는 시스템을 의미한다.</li>
+<li>Monocondtional system: 각 명령의 조건 부분에 하나의 조건만 있는 시스템을 의미한다.</li>
+<li>Finite number of subjects: subject의 개수가 finite한가?</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Chinese Wall 모델에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">Chinese Wall 모델은 HRU 모델이 더 발전된 형태이다. 접근권한이 사전에 세팅되고 요청이 있을 때마다 접근권한이 동적으로 변경되는 특징을 가진다. 또한 Chinese-Wall 모델은 subject의 접근권한이 바로 직전에 한 행동에 의해 다음 접근권한이 결정된다는 특징을 가지고 있다. 예를 들어 변호사가 CITI 은행의 변호를 맡는 순간 KB, NH, SH와 같은 다른 은행에 대한 접근권한이 차단된다. 하지만 S-OIL, GS 칼텍스와 같은 이해상충집단(COI, Conflict Of Interest)이 아닌 클래스의 데이터에는 접근할 수 있다. Brewer와 Nash가 Chinese-wall 모델을 정의할 때도 SS-property와 *-Property를 충족해야 한다고 하였다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>SS-Property: 데이터에 접근하는 동시에 이해상충집단에 해당하는 데이터의 접근하지 못함을 의미한다. 하지만 만약 이해상충되더라도 접근을 계속 유지하고 있거나 완전히 COI Class에 속한다면 접근 가능하다.</li>
+<li>*-Property: Information flow에 있어 이해상충집단간의 un-sanitised information이 흐르지 못하도록 하는 것이다. 또한 write access는 이해상충집단에 속해있는 object가 현재 읽혀지지 않고 있거나, 또는 un-sanitised information을 가지고 있을때만 허용된다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>RBAC에 대해 서술하시오</b></p>
+<p data-ke-size="size16">RBAC은 역할기반접근통제정책이다. 기존의 DAC, MAC에서의 접근권한이 사람에게 부여되지만 실제 세상에서의 접근권한은 사람에게 부여되는 것이 아닌 그 사람의 역할에 부여된다는 점에 기반하였다. (그림 그리기) User와 Role사이에 Session이 있고, 이는 동시에 여러 개의 역할을 할당받기 위해 필요한 개념으로, 윈도우에서 창을 여러개 띄워 놓는 것과 같다. RBAC에서 role이 분리되어야할 경우가 2가지가 존재하는데 첫 번째로는 static seperation of Duty로 예를 들어 한 사람이 총무의 역할을 맡으면서 동시에 감사의 역할을 맡을 수 없음을 의미한다. 두 번째로는 dynamic seperation of Duty로 예를 들어 은행 업무를 하고 있는 직원의 역할을 가진 동시에 고객의 역할을 할 수없음을 의미한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>우리나라의 리스크 관리에 있어 최대 문제점은 무엇인가?</b></p>
+<p data-ke-size="size16">데이터의 중요도에 따른 데이터의 등급화가 되어 있지 않다는 것이 핵심이다. 중국의 경우에도 의료, 금융, 개인정보 등을 Low, Medium, High, Very High와 같이 4단계로 나누나 우리나라의 경우 그렇지 않다. 또한 데이터의 중요도에 따라 데이터의 등급을 나눈 뒤 망분리와 망연계가 명확히 되어야 하지만 잘 이루어지지 않고 있는 것이 실태이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Covert Channel은 무엇이고 Side Channel과 어떻게 다르며 이 Covert Channel을 해결하기 위한 방안은 무엇인가?</b></p>
+<p data-ke-size="size16">Covert Channel은 설계자가 의도하지 않았던 방향으로 데이터를 유출하는 채널을 의미한다. Side Channel과의 차이점은 Covert Channel의 경우 송신자와 수신자간의 Covert Channel에 대한 약속이 필요하고, Side Channel의 경우 송신자가 필요하지 않고 수신자 입장에서 별도의 채널을 통해 정보를 추출하는 것이다.</p>
+<p data-ke-size="size16">Covert Channel은 기본적으로 전부 막을 수는 없으나 이를 해결하기 위한 방안으로 Lattice Based 모델이 있다. Lattice Based 모델은 수학에서 이야기하는 Lattice 구조를 이용하여 정보가 흘러도되는 것과 흐르면 안되는 것을 포멀하게 정의하는 모델이다. Lattice 구조가 성립하는 조건으로는 GLB와 LUB가 있고, 모든 Subset에 대해서 GLB와 LUB가 존재할 경우에 해당한다. 하지만 현업에서 실제로 사용하기에는 복잡하다는 단점이 존재하고 이를 조금 더 적용하기 쉽고, 구현에 용이하게 만든 모델이 Non-Interference 모델이다. Non-Interference 모델은 covert-channel과 Inference attack을 주로 다룬다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Execution Monitor의 개념과 특징을 서술하시오.</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Execution Monitor는 이벤트가 발생할 때 시스템 정책들에 위반되는 사항이 있는지 확인하는 시스템이다. 구체적으로 어떤 함수가 error 상황을 야기하도록 하는 위험한 함수인지 아닌지를 검증하는 것으로, 그 함수 외부로 undesirable exception이 propagate 되지 않는지 또 그 결과에 대한 report가 제대로 되는지를 모니터링 한다.</li>
+<li>Execution Monitor는 운영체제 안에서 동작하는 것으로 프로그램을 한 줄 한 줄 실행시켜보며 이벤트가 발생했을 때 EM 시스템이 괜찮은지 검증 후 괜찮다면 실행시키고 문제가 발생하면 빠져나오는 시스템이다. EM을 활용하면 DAC, MAC 정책에서 정책을 위반 여부를 관찰할 수 있는 것이 특징이다. 하지만 Information flow security 같이 정보가 제대로 흐르는지 아닌지는 EM으로 체크할 수 없다. 예를 들어 DDOS 같은 경우는 EM으로 체크할 수 없는데, 이는 EM이 항상 과거의 데이터를 보기 때문에 DDOS와 같이 미래를 보아야 하는 공격은 체크할 수 없는 단점이 있다. 즉 EM으로 모든 보안정책을 제어하기에 한계가 있고 불충분하기에 RM에 다른 요구사항이 추가되어야해서 복잡한 구조를 가지게 된다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Liveness property와 Safety property에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">Liveness property는 프로그램은 언젠가 종료될 것이지만 언제인지 알 수 없다는 의미를 가지며, Safety property는 나쁜일은 생기지 않는다는 것을 의미한다. Liveness property는 미래를 보아야 하기 때문에 어렵고 safety property는 과거를 보기 때문에 비교적 쉽다. Execution Monitor는 safety property에 속하는 것은 전부 측정할 수 있다. 하지만 EM으로는 모든 보안정책을 제어하기엔 한계가 있고, 불충분하기에 Reference Monitor에 다른 것이 추가되어야 해서 복잡한 구조를 가지게 된다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Reference Monitor의 세 가지 기본원칙을 설명하시오</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Reference Monitor: 감시 프로그램인 Reference Monitor는 운영체제에서 발생하는 모든 이벤트를 감시할 수 있어야 하고 정책에 위반되는 것을 차단해야 한다.</li>
+<li>Simplicity &amp; Assurance: RM이 중요하기 떄문에 수학적으로 증명해야 한다. 하지만 RM이 복잡하다면 수학적 증명이 어려워진다. 따라서 RM을 단순하게 만들고 이를 통해 Assurance를 높여야 한다.</li>
+<li>Evaluation &amp; Certification: 평가제도를 운영하여 정부가 이를 받아들이도록 해야 한다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Reference Monitor의 세 가지 요구조건을 더 명확히 표현하여 설명하시오</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Complete Mediation: RVM이 있어서 운영체제에서 발생하는 모든 이벤트를 통제할 수 있어야 한다. (Reference Validation Mechanism)</li>
+<li>Tamper-Proof: RVM은 해커가 리버싱할 수 없어야 하고 non-bypassible하여 해커가 우회할 수 없어야 한다.</li>
+<li>Verifiable: RVM은 충분히 작아서 수학적으로 검증 가능해야 한다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Trusted Computing Base (TCB)를 설명하시오.</b></p>
+<p data-ke-size="size16">Security Kernel과 다른 보호메커니즘을 결합한 것으로, TCB는 신뢰가 필요한 모든 H/W와 S/W가 포함된다. (Security kernel: Reference Monitor를 실제로 구현해둔 것을 의미한다.)</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Authentication vs Identification을 설명하시오.</b></p>
+<p data-ke-size="size16">Authentication은 사용자 인증을 의미하고, Identifiaction은 개인 식별을 의미한다. 예를 들어 네이버에 아이디와 비밀번호로 로그인하는 것은 사용자 인증에 해당하고 범죄현장에서 지문을 발견하여 데이터베이스에서 매칭하여 범인을 알아내는 것은 개인 식별에 해당한다. 내가 나임을 증명한다면 Authentication이고, 타인이 나를 식별한다면 Identification이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>High Assurance Crypto Library란 무엇인가?</b></p>
+<p data-ke-size="size16">설계부터 구현까지 수학적으로 전부 증명된 것을 의미한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Secure Design Principle 12가지를 서술하시오</b></p>
+<ol style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Least Privilege: 사람 또는 시스템이 필요로 하는 최소한의 권한만 부여하는 것을 의미한다.</li>
+<li>Fail-Safe Defult: 명시적 허용이 아니면 거부를 의미한다. 예를 들어 방화벽 룰셋에 설정되어 있지 않다면 패킷을 drop하는 것과 같다.</li>
+<li>Economy of mechanism: H/W나 S/W를 만들 때 설계를 심플하고 작게 만들어야 함을 의미한다.</li>
+<li>Complete Mediation: 중요 자원에 접근하려는 것을 모두 통제할 수 있어야 함을 의미한다.</li>
+<li>Design by Contract: 정해진 인터페이스나 프로토콜로만 중요 자원에 접근할 수 있어야 함을 의미한다.</li>
+<li>Open Design: 설계도의 소스코드가 공개되더라도 안전도를 유지할 수 있어야 할 수 있어야 함을 의미한다.</li>
+<li>Seperation of Privilege: 중요 권한은 분리되어야 함을 의미한다.</li>
+<li>Least Common Mechanism: 공통 모듈 사용 최소화를 의미하는 것으로, Economy of mechanism과 정면으로 위배되는 특징이 있다.</li>
+<li>Psychological Acceptability: 심리적으로 사용하기 좋아야함을 의미하는 것으로 Usable security라고도 불린다.</li>
+<li>Defense In Dept: 보안 시스템을 둘 때 계층적으로 구성해야함을 의미한다.</li>
+<li>Effective Logging: 효율적인 로깅이 가능해야 함을 의미한다. 최근 개인정보보호법으로 인해 무엇을 기록하지 말아야 할지도 고려해야 하는 것이 특징이다.</li>
+<li>Built In, Not Bolt on: 시스템을 만들고 나서 보안을 고려하는 것이 아니라 시스템을 만들때 함께 보안을 고려하는 것을 의미한다.</li>
+</ol>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Design Assurance를 쉽게 달성하는 방법은?</b></p>
+<p data-ke-size="size16">Design Assurance를 쉽게 달성하기 위해서는 전제조건을 맞추어 두면 된다. 또한 가정(Assumption)이 많으면 쉽게 달성할 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Design Assurance를 입증하는 방법에 대해 서술하시오</b></p>
+<p data-ke-size="size16">크게 2가지로 나뉘며 Symbolic method와 Confidential method로 나뉜다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Symbolic Method:&nbsp; 수학적 증명을 자동화하는데 사용하는 방법으로, 주로 리플레이 공격을 분석하는데 사용된다. 하지만 confidential method와 달리 복잡한 공격에 대해서는 증명이 어렵다는 단점을 가진다.</li>
+<li>Computational Method: 정교한 공격에 대해 수학적 증명이 가능한 방법으로 골드아서와 미칼리가 주로 기여한 분야이다. Symbolic method와 달리 자동화시키기 어렵기 때문에 대부분 manual하게 증명하는 것이 특징이다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>SPN (Substitution-Permutation Network)의 특징을 서술하시오.</b></p>
+<p data-ke-size="size16">주로 대칭키인 AES 암호화에 사용되는 네트워크로, 네트워크 내부적으로 크게 Diffusion과 Confusion이 있다. Diffusion은 확산으로 암호문과 평문사이의 관계를 알아낼 수 없도록 복잡하게 섞어주는 것을 의미한다. 주로 permutation을 통해 데이터의 순서를 바꾸는 방법(P-Box)을 사용한다. . Confusion은 혼돈으로 키와 암호문간의 관계를 알아낼 수 없도록 복잡하게 섞는 것을 의미한다. 주로 Substituion을 통해 다른 symbol로 바꾸는 방법(S-box)을 사용한다.&nbsp; 이러한 Diffusion과 Confusion을 극대화하기 위해서는 permutation과 substitution을 반복적으로 하면된다. 이러한 대칭키 암호에서 Design Assurance를 입증하기 위한 전제조건으로는 S-box와 P-box는 안전한 것으로, 특히 S-Box는 랜덤하다는 전제가 필요하다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>RSA 암호의 특징에 대해 설명하시오</b></p>
+<p data-ke-size="size16">디피와 헬만이 공개키 암호를 정의하였고 이러한 정의를 충족하여 만들어진 최초의 공개키 암호가 RSA 암호이다. RSA 암호의 안전성은 소인수분해에 기반한다. 하지만 RSA 암호의 해독방법은 소인수분해 말고도 존재하여 안전성은 증명되지 않았다. 대신 소인수분해 문제를 제외하고 RSA 암호에 대한 공격기법이 개발되면 그에 맞추어 업그레이드 시키는 것이 특징이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>레빈암호 시스템에 대해 설명하시오</b></p>
+<p data-ke-size="size16">레빈암호시스템은 RSA 암호시스템과 달리 수학적구조가 아름답다. RSA 암호시스템은 기본적으로 안전성은 소인수분해 문제의 어려움에 기반하지만 소인수분해이외에도 암호를 해독할 수 있는 방법이 존재한다. 따라서 RSA 암호를 해독할 수 있는 공격 방법이 만들어질 때 마다 암호시스템을 업그레이드한다. 이와는 달리 레빈암호시스템은 해독가능한 방법이 소인수분해 밖에 없다는 것을 수학적으로 증명되어 있다. 이러한 레빈암호시스템은 Design Assurance를 만족하는 최초의 공개키 암호라는 것에 의의가 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Random Oracle Model이란 무엇인가?</b></p>
+<p data-ke-size="size16">전제조건이 해쉬암호는 안전하다는 것으로, 정확히는 해시암호의 출력은 랜덤함을 전제하는 것을 의미한다. 이를 통해 기존의 theoretical한 암호시스템과 practical한 암호시스템이 결합되기 시작되었다는 점에서 의의가 있는 것이 특징이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Perfect Secrecy의 특징을 서술하시오.</b></p>
+<p data-ke-size="size16">Perfect secrecy는 샤논이 만든 개념으로 passive 공격자가 무한한 컴퓨팅 파워가 있더라도 암호문으로부터 어떠한 정보도 얻어낼 수 없는 것을 의미한다. 하지만 이는 대칭키에서는 성립하지만 공개키암호에는 적용할 수 없다는 단점을 가진다. 이는 공개키가 있기 때문에 전수조사로 비밀키를 찾을 수 있기 때문이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Semantic Security의 특징을 서술하시오</b></p>
+<p data-ke-size="size16">기존의 샤논이 만든 개념인 perfect secrecy의 단점인 공개키에서는 적용할 수 없다는 단점을 보완하기 위해 골드아서 박사가 정의한 개념으로 "유한한 컴퓨팅 파워를 가진 공격자가 암호시스템으로부터 그 어떠한 1비트의 정보도 알아낼 수 없음"을 의미한다. design assurance의 관점에서 요구사항이 한 단계 진화할 수 있었고 이후에는 이러한 정의를 충족하는 암호 알고리즘이 만들어지게 되었다는점에서 의의가 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>공개키암호의 message space가 작으면 발생할 수 있는 문제는 무엇이고 해결방법은 무엇인가?</b></p>
+<p data-ke-size="size16">공개키 암호에서 message space가 작다면 대칭키 암호와 달리 전수조사를 통해 해독이 가능하다는 문제점이 있다. 이를 해결하기 위한 방안으로는 같은 메시지더라도 출력값이 달라지게 하기 위해 랜덤패딩을 붙이는 방법이 있다. 이러한 랜덤패딩을 붙이는 방법이 Polynomial Security(IND-CPA)이다. 즉, 암호알고리즘이 polynomial security를 만족하려면 랜덤패딩이 필요하다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Polynomial security (IND-CPA)의 특징을 서술하시오.</b></p>
+<p data-ke-size="size16">기존의 공개키암호시스템에서 message space가 작다면 대칭키암호시스템과 달리 전수조사를 통해 알아낼 수 있다는 단점을 보완하기 위해 나온 개념으로, 동일한 평문이 동일한 암호문을 출력하지 않도록 랜덤패딩을 붙이는 방법을 의미한다. 즉, polynomial security를 만족하려면 랜덤패딩이 필요하다. polynomial security는 semantic security와 다르게 표현되었지만 동치라는 특징을 가진다. 즉 암호알고리즘에 랜덤패딩을 추가하면 암호문으로부터 그 어떠한 정보도 노출되지 않는다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>암호문을 위/변조하는 Active Attacker를 막는 설계 방법은 무엇인가?</b></p>
+<p data-ke-size="size16">크게 3가지 방법이 있다. 첫 번째는 전자서명을 사용하는 것이다. 암호문에 전자서명을 붙여서 보내는 방식으로 가능하다. 하지만 공개키 암호문을 설계하는데 전자서명도 사용해야하기 때문에 비효율적인 방법에 해당한다. 두 번째는 Message Authentication Code를 붙이는 방법이 있다. 하지만 이 또한 MAC 알고리즘의 안전성에 대해 증명해야한다는 단점이 있다. 세 번째는 고정된 형태의 패딩을 추가하는 것이다. 하지만 semantic security를 만족하려면 랜덤한 패딩을 추가해야한다. 이러한 문제점을 해결하기 위한 방법이 OAEP이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>OAEP(IND-CCA)의 특징을 서술하시오.</b></p>
+<p data-ke-size="size16">IND-CCA의 경우 기존의 골드아서와 미칼리의 semantic security가 passive한 공격자로 전제한다는 단점을 보완하기 위해 나온 개념으로 active한 공격자에서도 암호시스템을 안전하게 만들기 위한 방법이다. 이는 고정된 형태의 패딩을 추가하는 방식으로 충족시킬 수 있다. 하지만 semantic security를 만족하기 위해서는 랜덤패딩을 추가하여야 한다. OAEP는 이러한 고정패딩과 랜덤패딩을 함께 추가하는 방법으로 Chosen Cipher Attack에 안전하다는 특징을 가진다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Non-malleability (NM-CCA)의 특징을 서술하시오.</b></p>
+<p data-ke-size="size16">전통적으로 암호문을 해독하거나 부분정보를 끄집어내는 방법과 달리 암호문을 해독하지 않고 암호문에 변조를 가하는 것을 의미한다. 이를 통해 암호문이 갖추어야 할 requirement가 semantic security와 non-malleability가 되었다. 하지만 후에 이는 다르게 표현되었으나 동치임이 확인되었고 결국 semantic security, polynomial security, non-malleability는 다르게 표현되었지만 하나라는 요구조건임을 확인하였다는 점에서 의의가 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>암호에서 Active 공격을 방어하기 위해 사용하는 방법은 무엇인가?</b></p>
+<p data-ke-size="size16">암호에서 active 공격이 많이 발생하기 때문에 암호알고리즘만 사용하지 않고 MAC과 함께 사용되는 경우가 많다. 크게 3가지 방법이 있다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Encrypt-and-MAC: 메시지에 대해 암호화시키고 그것과 별개로 메시지에 대해 MAC 코드를 만드는 방법이다.</li>
+<li>MAC-then-Encrypt: 메시지에 대해 MAC을 만들고 원래 메시지 뒤에 붙인 뒤 전체를 암호화시키는 방법이다.</li>
+<li>Encrypt-then-MAC: 메시지를 먼저 암호화시키고 그 암호문에 대해 MAC을 붙이는 방법이다.</li>
+</ul>
+<p data-ke-size="size16">여기서 주요 쟁점은 설계방법에 따른 안전도 문제(합성보안 문제)가 제기되는데 통상적으로 Encrypt-then-MAC이 가장 안전하다고 알려져있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Compositional Security란 무엇인가?</b></p>
+<p data-ke-size="size16">합성보안문제로 예를 들어 블록체인에서 떠오르는 분야인 DeFi에서도 사용되는 개념이다. DeFi는 머니레고시스템이라고도 부르는데 이는 소스코드가 공개되어 있어 자신들이 만들고자하는 서비스를 만들어 DeFi 시스템에 붙이는게 가능하다. 이 때 공개된 소스코드에 취약점이 있다면 DeFi 전체시스템에 대해 합성보안 문제가 야기된다. 또한 BlackHat 2017에서 발표되었던 WPA2의 사례와 같다. 유닛테스트에서는 안전함이 증명되었지만 통합테스트(합성)에서는 안전하지 않았다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Zero-knowledge 시스템의 특징을 서술하시오.</b></p>
+<p data-ke-size="size16">암호화 알고리즘과 전자서명은 단방향으로 보내면 되는 1-way 형식이지만 세상에는 interactive하게 동작하는 것이 많다는 점에 착안하여 어떤 client, server, verifier가 interactive하게 동작했을 때 안전하다는 것은 어떻게 입증하는가와 같은 문제가 대두되면서 도입된 개념이다. 영지식 증명의 개념은 3가지 조건을 만족해야 한다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>완전성(Completeness): 어떠한 정보가 참일 경우에 정직한 증명자는 정직한 검증자에게 그것을 납득시킬 수 있어야 한다.</li>
+<li>건전성(Soundness): 어떤 정보가 거짓일 경우에 부정직한 증명자는 거짓말을 통해 정직한 검증자에게 그것이 ‘참’임을 납득시킬 수 없어야 한다.</li>
+<li>영지식성(Zero-Knowledge): 검증자는 어떤 정보가 참 혹은 거짓이라는 사실 이외에는 아무것도 알 수 없어야 한다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>CC와 EAL7에서 소프트웨어 검증보다 소프트웨어 테스팅에 의존하는가? or Code Assurance의 한계는 무엇인가?</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Software Fault, Error, Failure를 설명하고 왜 구분해야 하는지에 대한 이유를 서술하시오.</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Software Fault: 소프트웨어 자체가 가지고 있는 결함을 의미하는 것으로 문제가 발생하는 근본 원인이다.</li>
+<li>Software Error: 불안정한 프로그램 상태를 의미하는 것으로 어떤 값을 넣어 software의 문제가 있는 Falut까지 도달하면 내부적으로 이상상태가 발생하는 것을 의미한다.</li>
+<li>Software Failure: Fault까지 도달하여 내부적으로 불안정한 프로그램 상태가 외부로 표출되는 것을 의미한다.</li>
+</ul>
+<p data-ke-size="size16">구분 없이 모두 합쳐서 bug라 부르면 안된다. 명확히 구분해야 test case가 제대로 되었는지 아닌지 구분할 수 있기 때문이다. 만약 모두 합쳐 bug라 부른다면 test case를 설명할 방법이 없어진다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Software Fault의 종류는 무엇이 있는가?</b></p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Random Fault: 사람의 실수에 의해 발생하는 Fault를 의미한다.</li>
+<li>Intentional Fault: 의도성을 가지고 발생시킨 Fault를 의미한다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Software Testing과 Debugging의 차이점을 서술하시오.</b></p>
+<p data-ke-size="size16">Software testing은 소프트웨어를 체크할 수 있는 test value인 input값을 뽑아내는 것을 의미한다. 반면 debugging은 외부로 표출된 failure를 보고 결함이 있는, 문제의 원인이 되는 fault부분을 찾아가는 것을 의미한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Static testing과 Dynamic testing의 차이점을 서술하시오</b></p>
+<p data-ke-size="size16">Static testing은 프로그램을 실행시키지 않고 테스팅하는 것을 의미하는 것으로 소스코드, 바이너리, 중간언어가 될 수 있다. 반면 Dynamic testing은 프로그램을 실행시키면서 테스팅하는 것을 의미하는 것으로 체계적인 테스팅을 위해 DART라는 프로그램을 사용하기도 한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Black box testing이 먼저인가 White box testing이 먼저인가 그리고 이유를 설명하시오.</b></p>
+<p data-ke-size="size16">black box testing이 먼저이다. 개발공정상 개발단계 전까지 코드가 없기 때문에 white box testing을 할 수 없다. black box testing은 바이너리가 아닌 코드가 없이 테스팅하는 것을 의미한다. 때문에 설계문서와 같은 모든 것들이 black box testing의 대상이 된다. 이후 코드가 완성되면 white box testing까지 하여 정교한 테스팅이 가능해진다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Validation과 Verification의 차이점을 서술하시오</b></p>
+<p data-ke-size="size16">Validation은 사용자의 마음에 맞도록 만들어졌는가를 의미하는 것으로 Verification보다 어려운 것이 특징이다. 여기에는 사용자의 요구를 전부 분석하여 requirement를 제대로 도출하였는지까지가 들어간다. Verification은 specification이 있고 이를 통해 requirement가 제대로 도출되었다고 전제하고 requirement가 specification대로 만들었는지 검증하는 것으로 validation보다 쉽다는 것이 특징이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>test case 선정 시 잘 도출하였는지 평가하기 위해 네 요소를 사용하는데 이 네 요소와 특징에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">4가지 요소는 RIPR이다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Reachability: test input 값이 문제의 근원인 소프트웨어 fault가 있는 지점까지 도달해야 함을 의미한다.</li>
+<li>Infection: test input 값이 문제의 근원인 소프트웨어 fault까지 있는 지점까지 도달하여 프로그램 내부 상태가 불완전한 상태(error state)로 만드는 것을 의미한다.</li>
+<li>Propagation: 불완전한 상태가(erorr state)가 전이되어 최종적으로 Incorrect한 final state로 가는 것을 의미한다.</li>
+<li>Revealability: 프로그램의 Incorrect한 final state가 실제로 외부로 드러나는 것을 의미한다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Test requirement와 Coverage Criteria의 관계는 무엇인가?</b></p>
+<p data-ke-size="size16">test case → test set → test requirement → coverage criterion → coverage criteria의 단계를 가지는 구조이다.</p>
+<p data-ke-size="size16">둘 간의 관계를 예시를 들면 다음과 같다. 예를 들어 젤리의 맛이 6가지와 색이 4가지가 있을 때 Coverage Criteria는 두개가 될 수 있다. 젤리봉투를 뜯었을 때 맛이 6가지가 있어야 한다는 C1의 Criterion과 색이 4가지가 있어야 한다는 C2의 Criterion이다. C1과 C2를 합쳐 Coverage Criteria라고 하며, 이를 통해 test requirement를 도출할 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>소프트웨어를 모델링하는 대표적인 방법을 서술하시오. (Coverage Criteria를 줄 때 사용하는 방법)</b></p>
+<p data-ke-size="size16">소프트웨어를 모델링하기 위해 사용하는 방법은 크게 4가지로 Input domain, Graph, Logical Expression, Syntax Structure 방식이 있다. 어떤 방법론을 사용하느냐에 따라 coverage criteria는 다른 형태로 주어진다.</p>
+<ul style="list-style-type: disc;" data-ke-list-type="disc">
+<li>Input Domain model based testing: 함수에 들어가는 입력 값만보고 테스트케이스를 만드는 계획을 세우는 방법을 의미한다.</li>
+<li>Graph model based testing: 소스코드를 그래프의 형태로 바꾸어 모델링하는 방법으로 소프트웨어 테스팅에 가장 많이 사용되는 기법이다.</li>
+<li>Logical Expression model base testing: 조건문만 가지고 test case를 도출하는 모델링 방법으로, predicates라고도 부른다.</li>
+<li>Syntax Structure model based testing: 문법 규칙을 주고 문법 규칙에 따라 test case를 생성하는 모델링 방법이다. 그래프만큼 모델링에 많이 사용되며 grammar-based modeling이라고도 한다.</li>
+</ul>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Generator와 Recognizer를 설명하시오.</b></p>
+<p data-ke-size="size16">Generator는 coverage criteria를 주면 알아서 test case를 만들어주는 것을 의미하며, Recognizer는 test case가 주어지면 어느 coverage까지 달성하는지를 분석해주는 것이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Graph model based testing의 특징을 서술하시오.</b></p>
+<p data-ke-size="size16">소스코드를 그래프의 형태로 바꾸어 모델링하는 방법으로 소프트웨어 테스팅에서 가장 많이 사용되는 기법이다. 크게 2가지 기법으로 Structural coverage criteria와 Data flow coverage criteria로 분류 된다. (분류 특징 서술하기). 그래프 모델링 기법은 소스코드에 사용하는 것이 주로 일반적이나 설계단계의 문서와 더불어 제품을 개발하는 여러 단계에 테스팅하는데 활용할 수 있다. 그래프 모델링에서 test case 도출을 어렵게하는 요소로는 루프가 있다. 기존에는 루프를 만나면 사이클을 한 번만 돈다고 가정하였으나 이는 abstraction gap이 크다는 단점이 존재한다. 따라서 이를 해결하기 위한 방안으로 touring, sidetrips, detours라는 prime path 를 사용하여 abstraction gap을 줄이려는 노력을 하고 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Call-Graph를 설명 하시오</b></p>
+<p data-ke-size="size16">Control Flow Graph, Data Flow Graph 이외에 Call Graph가 있는데 이는 어떤 모듈이 어떤 모듈을 부르는가에 대한 호출 관계를 표시하는 그래프이다. 모듈을 어떻게 분배시킬까에 대한 sub-system level에서 사용되며, 결과적으로 design integration test에 활용한다.</p>
+<p data-ke-size="size16">(좀더 포멀하게 바꿀 수 있으면 좋겠습니다.)</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Logical Expression Model based testing에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">조건문만 가지고 test case를 도출해내는 모델링 방법으로 이를 predicates라고도 한다. logic expression은 소스코드에서 발견되는 predicates와 clause에 따라 이를 테스트할 수 있는 test case를 도출하는 것이 특징이다. clause에는 major clause와 minor clause가 있다. major clause는 predicates를 결정짓는 핵심이되는 것을 의미하며, minor clause는 그 이외의 것을 의미한다. 효율적인 test case 도출을 위해서는 major clause를 도출해내는 것이 중요하다. 하지만 logical expression 모델링 방법은 프로그램을 실행시키전까지는 파악하기 어렵다는 단점을 가진다. 예를 들어 어떤 값에 n을 나누거나 y를 나눌 때 어떤 값이 나올지 알기 어려운 것과 같다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Syntax Structure Based Testing에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">문법 규칙에 따라 test case를 생성하는 모델링 방법이다. Graph-based 모델링 방법만큼 많이 사용되며 Grammar-based modeling이라고도 한다. grmmar가 구성되면 두 가지 목적으로 사용가능하다. 첫 번째는 grammar에 맞춰 여러 test case를 생성할 수 있고, 두 번째로는 어떤 값이 grammar를 충족하는지에 대한 여부를 확인할 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Structural Coverage Criteria과 Data Flow Coverage Criteria의 특징을 서술하시오.</b></p>
+<p data-ke-size="size16">Control Flow는 structural coverage criteria와 연계되고 Data Flow는 data flow coverage criteria로 연계된다. structural coverage criteria는 노드와 엣지로 그래프를 정의하고 분기(e.g. if)를 통해 프로그램이 실행되는 코드가 달라지는 것을 기준으로 하는 방법이다. 대표적으로 node coverage, edge coverage, edge-pair coverage, complete path coverage, specified path coverage 등이 있다.</p>
+<p data-ke-size="size16">data flow coverage criteria는 프로그램이 어떻게 변수가 정의되고 사용되는지를 기반하여 커버리지 기준을 적용하는 방법을 의미한다. 즉, 데이터 흐름 그래프상에서 각 변수의 def-use-pair가 다양한 방식으로 실행되도록 하는 기준이다. 대표적으로 all-defs coverage, all-uses coverage, all-du-paths coverage이 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>mutant에 대해 설명하시오</b></p>
+<p data-ke-size="size16">mutant는 원본 프로그램이 있고 일부를 바꾸었을 때를 의미한다. mutant는 크게 valid mutant와 Invalid mutant로 나뉜다. valid mutant는 시드값을 바꾸었을 때 그래머를 만족하는 mutant를 의미하며, Invalid mutant는 시드값을 바꾸었을 때 그래머를 만족하지 않는 mutant를 의미한다. 주로 mutation testing이 사용 된다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>mutation testing을 설명하시오.</b></p>
+<p data-ke-size="size16">grammar(subject)로부터 ground string(seed) 값을 뽑아낸다. 이후 ground string(seed)에서 일부를 바꾸면 mutant가 생성된다. 이 때 test case를 generate하여 ground string와 mutant에 각각 넣고 같은지를 비교하며 이를 mutation testing이라 한다. 쉽게 말해 원본 프로그램은 run tests on subject에 들어가고 변형된 프로그램은 run tests on mutant에 들어간다. 이후 test case를 생성하여 각각의 프로그램에 넣었을 때 원본 프로그램과 변형된 프로그램을 구분할 수 있으면 이를 mutant를 죽였다 표현하고 이를 mutation testing이라 한다.&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>program-based mutation testing에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">test case가 제대로 만들어졌는지 test할 때 주로 사용되는 testing 기법이다. coverage 개념과는 다르며, 얼마나 많은 mutant를 제거하였는지가 핵심이다. 즉, grammar를 따르지 않은 mutant와 grammar를 제대로 따른 원본을 test case가 구별해낼 수 있는 가이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>여러 소프트웨어 테스팅 기법 중 grammar-based mutation testing이 가지는 특징은 무엇인가?</b></p>
+<p data-ke-size="size16">Input domain, graph, logical expression 등의 테스팅 기법과 달리 grammar-based mutation testing은 test case를 test 할 수 있다는 것이 가장 큰 특징이다. 또한 기본적인 grmmar를 정해두고 조금씩 변형해가며 input을 넣어보는 퍼징에도 효과적으로 사용할 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Software verification의 특징을 서술하시오</b></p>
+<p data-ke-size="size16">software testing의 한계인 실제로 버그가 없음을 입증하기 위해 모든 가능한 인풋값에 대해 전부 테스트해보아야 한다는 것을 보완하기 위해 나온 것으로, software가 requirement를 충족하는지 충족하지 않는지를 수학적으로 증명하는 방법이다. 하지만 문제점은 어떤 software가 requirement를 충족하는지 하지 않는지를 증명하는 것은 undecidable problem에 속하기 때문에 이론적으로 software verification이 불가능하다고 입증되었다. 하지만 현실에서 마주하는 것은 모든 software가 아닌 특정 타입의 software이기 때문에 범위를 줄이게 되면 불가능하지 않다. software verification에서 사용되는 요소 기술의 종류는 symbolic execution, automatic theorem prover, model checker 등이 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Concrete Execution이란 무엇인가?</b></p>
+<p data-ke-size="size16">프로그램을 실행시키면서 변수 값이 어떻게 변형되어 가는지 확인하며 프로그램이 제대로 동작하는지 하지 않는지를 검증하는 것이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Symbolic Execution에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">기호실행은 프로그램에 구체적인 값을 넣지 않고 모든 것을 기호로 바꾸어 전개시키고, 실제 테스팅하고자 하는 영역의 방정식을 충족하는 값을 구하는 방식이다. 전개된 상태에서 방정식만 풀면 어떤 경로를 테스트할지 test case를 자동으로 뽑아낼 수 있다. 즉 testing input generation이 가능하여 어떤 경로로 갈지 바로 뽑아낼 수 있다는 것이 장점이다. 반대로 path explosion 때문에 적용이 쉽지 않은 것이 단점인데 이는 구체적인 값이 아니라 기호를 넣으면 길이가 긴 경로가 나올 수 있기 때문이다. 이에 대한 대안으로는 pre-conditioned symbolic execution으로, 이는 프로그래밍할 때 BOF와 같이 에러가 많이 발생할 수 있는 조건에 사용할 수 있다. 보안관점에서는 buggy path만 체크하면 경우의 수가 줄어 Exploitable한 path에 대해 symbolic execution하여 효과적인 test case 도출이 가능하다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Automatic Theorem Prover에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">software verification에서 자주 사용되는 요소 기술 중 하나이다. 프로그램을 정형명세로 바꾸어 표현하는 것이 특징이다. 구성요소는 3가지로 variable, precondition, postcondition이 있다. 만약 a와 b를 더한 결과인 result를 출력해주는 프로그램이 있다 가정할 경우 a,b,result는 variable에 해당하고 이에 할당된 초기값은 precondition에 해당한다. 마지막으로 a, b, result에 대한 관계는 postcondition에 해당한다. 프로그램이 전부 수행되었을 때 Automatic Theorem Prover가 자동으로 정형명세를 충족하였는지 검증하며, 이를 Floyd-Hoare Triple이라고도 한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Floyd-Hoare Triple에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">Variable, Precondition, Postcondition으로 구성되는 것으로, Precondition {P}가 주어졌을 때 논리적 흐름에 따라 전개되면 반드시 Postcondition {Q}에 도달한다. 따라서 프로그램에 Precondition과 Postcondition을 정형명세로 바꾸어 중간 중간 끊어서 주게되면 실제 프로그램이 제대로된 논리 흐름을 따르는지 검증할 수 있는 것이 특징이다. 이러한 Precondition과 Postcondition을 정형명세로 표현하면 Theorem Prover가 정형명세를 지키고 있는지를 검증한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>(Automatic) Theorem Prover와 Model Checker의 차이를 서술하시오.</b></p>
+<p data-ke-size="size16">Model Checker는 기본적으로 automatic theorem prover에서 확장된 개념이다. 둘간의 차이점은 크게 자동화 여부, 적용 범위, requirement 개수로 3가지다.</p>
+<p data-ke-size="size16">자동화여부: theorem prover의 경우 프로그램 중간중간에 precondition과 postcondition을 정형명세로 다 입력해주어야 하는 반자동이다. 반면 model checker는 프로그램을 모델로 바꾸고 모델이 도달해야할 요구사항을 준 뒤 충족했는지의 여부를 yes or no로 출력 가능한 것으로 완전 자동에 해당한다.</p>
+<p data-ke-size="size16">적용범위: theorem prover의 경우 반자동이기에 적용 범위가 넓어 많은 프로그램에 적용할 수 있다 반면 model checker는 적용할 수 있는 프로그램이 theorem prover 보다는 적다는 단점을 가진다.</p>
+<p data-ke-size="size16">requirement 개수: theorem prover는 반자동인 대신 체크할 수 있는 (security) requirement개수가 많고, model checker는 완전자동이지만 적용할 수 있는 (security) requirement 개수가 적다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size18"><b>Model Chcker에 대해 서술하시오.</b></p>
+<p data-ke-size="size16">모델 체커는 프로그램을 모델링하여 모델체커에 넣고 도달해야할 requirement를 주어 도달여부를 검증하는 것으로, 관점을 조금 바꾸면 exploit을 자동 생성하는 도구를 만들어 counter example을 뽑을 수 있는게 특징이다. 아래와 같이 아키텍처가 구성된다(그림 그리기). 이를 활용하여 cyber grand challenge에서 취약점 탐지 자동화 도구가 나왔었다. 하지만 이는 모든 가능한 exploit 코드를 만들어지는 것은 아닌데 이는 취약 가능성이 높은 buggy path만 보기 때문이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p></p><figure class="imageblock alignCenter" data-ke-mobilestyle="widthOrigin" data-origin-width="1507" data-origin-height="1107"><span data-url="https://blog.kakaocdn.net/dn/btwair/btrNyFamzJP/50it8cm3x8kApIUBn08dn1/img.png" data-lightbox="lightbox"><img src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/img(2).png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbtwair%2FbtrNyFamzJP%2F50it8cm3x8kApIUBn08dn1%2Fimg.png" onerror="this.onerror=null; this.src=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;; this.srcset=&#39;//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png&#39;;" width="492" height="361" data-origin-width="1507" data-origin-height="1107"></span></figure>
+<p></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p></div>
+            <!-- System - START -->
+
+<!-- System - END -->
+
+                    <div class="container_postbtn #post_button_group">
+  <div class="postbtn_like"><script>window.ReactionButtonType = 'reaction';
+window.ReactionApiUrl = '//roytravel.tistory.com/reaction';
+window.ReactionReqBody = {
+    entryId: 346
+}</script>
+<div class="wrap_btn" id="reaction-346"><button class="btn_post uoc-icon"><div class="uoc-icon"><span class="ico_postbtn ico_like">좋아요</span><span class="txt_like uoc-count">11</span></div></button></div>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/reaction-button-container.min.js.다운로드"></script><div class="wrap_btn wrap_btn_share"><button type="button" class="btn_post sns_btn btn_share" aria-expanded="false" data-thumbnail-url="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbzgqoT%2FbtrNANr5KbS%2FN6WAtSPAgYSo6KtVME7hV0%2Fimg.png" data-title="[사이버 보안] 보안공학 종합시험 정리" data-description="정보보안학 석사 과정을 졸업한지 1년 쯤 되어가고, 관심분야도 보안에서 딥러닝으로 바뀐지 꽤 오래 되었네요. 불현듯 자기 전 작년 종합시험 준비로 고통받던 때가 떠올라 이 글을 쓰게 됐습니다. 재학 기간 동안 두 번의 시험 기회가 있었고 첫 번째 기회를 날리는 고배를 마신 뒤 절치부심하는 마음으로 정리한 내용입니다. 중간/기말/종합시험 모두에 어느 정도 도움이 되리라 생각합니다. 가급적 논리적 서술이 가능하도록 정의, 배경, 특징, 장점, 단점, 차이점, 방법, 활용, 종류, 목표 등을 고려해 작성하였습니다. 아래에 예상 질문들은 강의 내용을 총 정리하다보니 자연스럽게 시험에서 이런 것을 물어볼 것 같다고 예상한 질문과 답안들입니다. 중간에 예상 답안이 부재한 경우는 2가지 이유입니다. 첫 번째는 교수님.." data-profile-image="https://tistory1.daumcdn.net/tistory/3162863/attach/f5f05e1a8ac2406ca4e736655091077e" data-profile-name="roytravel" data-pc-url="https://roytravel.tistory.com/346" data-relative-pc-url="/346" data-blog-title="For a better world"><span class="ico_postbtn ico_share">공유하기</span></button>
+  <div class="layer_post" id="tistorySnsLayer" style="display: none;"><div class="bundle_post"><a href="https://roytravel.tistory.com/346#none" class="btn_mark" data-service="facebook"><span class="ico_sns ico_fb"></span>페이스북으로 공유</a><a href="https://roytravel.tistory.com/346#none" class="btn_mark" data-service="kakaostory"><span class="ico_sns ico_ks"></span>카카오스토리로 공유</a><a href="https://roytravel.tistory.com/346#none" class="btn_mark" data-service="twitter"><span class="ico_sns ico_tw"></span>트위터로 공유</a><a href="https://roytravel.tistory.com/346#none" class="btn_mark" data-service="url"><span class="ico_sns ico_url"></span>URL 복사</a><span class="ico_postbtn ico_arrbt"></span></div></div>
+</div><div class="wrap_btn wrap_btn_etc" data-entry-id="346" data-entry-visibility="public" data-category-visibility="public"><button type="button" class="btn_post btn_etc2" aria-expanded="false"><span class="ico_postbtn ico_etc">게시글 관리</span></button>
+  <div class="layer_post" id="tistoryEtcLayer" style="display: none;"></div>
+</div></div>
+<button type="button" class="btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="3162863" data-url="https://roytravel.tistory.com/346" data-device="web_pc"><em class="txt_state">구독하기</em><strong class="txt_tool_id">For a better world</strong><span class="img_common_tistory ico_check_type1"></span></button><div class="postbtn_ccl" data-ccl-type="2">
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.ko" target="_blank" class="link_ccl" rel="license">
+        <span class="bundle_ccl">
+            <span class="ico_postbtn ico_ccl1">저작자표시</span> 
+        </span>
+    </a>
+</div>
+<!--
+<rdf:RDF xmlns="https://web.resource.org/cc/" xmlns:dc="https://purl.org/dc/elements/1.1/" xmlns:rdf="https://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Work rdf:about="">
+        <license rdf:resource="https://creativecommons.org/licenses/by/4.0/deed.ko" />
+    </Work>
+    <License rdf:about="https://creativecommons.org/licenses/by/4.0/deed.ko">
+        <permits rdf:resource="https://web.resource.org/cc/Reproduction"/>
+        <permits rdf:resource="https://web.resource.org/cc/Distribution"/>
+        <requires rdf:resource="https://web.resource.org/cc/Notice"/>
+        <requires rdf:resource="https://web.resource.org/cc/Attribution"/>
+        <permits rdf:resource="https://web.resource.org/cc/DerivativeWorks"/>
+
+    </License>
+</rdf:RDF>
+--></div>
+
+                    <!-- PostListinCategory - START -->
+<div class="another_category another_category_color_gray">
+  <h4>'<a href="https://roytravel.tistory.com/category/Computer%20Science">Computer Science</a> &gt; <a href="https://roytravel.tistory.com/category/Computer%20Science/%EC%A0%95%EB%B3%B4%EB%B3%B4%EC%95%88">정보보안</a>' 카테고리의 다른 글</h4>
+  <table>
+    <tbody><tr>
+      <th><a href="https://roytravel.tistory.com/131">[사이버 보안] 개인정보비식별화</a>&nbsp;&nbsp;<span>(0)</span></th>
+      <td>2021.10.17</td>
+    </tr>
+    <tr>
+      <th><a href="https://roytravel.tistory.com/117">[암호학] Diffie Hellman 키 교환 프로토콜</a>&nbsp;&nbsp;<span>(0)</span></th>
+      <td>2021.09.29</td>
+    </tr>
+    <tr>
+      <th><a href="https://roytravel.tistory.com/116">[암호학] 영지식 증명의 조건</a>&nbsp;&nbsp;<span>(0)</span></th>
+      <td>2021.09.29</td>
+    </tr>
+    <tr>
+      <th><a href="https://roytravel.tistory.com/115">[암호학] 해시함수의 3가지 성질</a>&nbsp;&nbsp;<span>(0)</span></th>
+      <td>2021.09.29</td>
+    </tr>
+    <tr>
+      <th><a href="https://roytravel.tistory.com/114">[암호학] Elgamal 암호 알고리즘과 취약점</a>&nbsp;&nbsp;<span>(0)</span></th>
+      <td>2021.09.29</td>
+    </tr>
+  </tbody></table>
+</div>
+
+<!-- PostListinCategory - END -->
+
+	</div>
+
+	
+
+	<div id="entry346Comment">
+	<div id="communicate">
+	          <form method="post" action="https://roytravel.tistory.com/comment/add/346" onsubmit="return false" style="margin: 0">
+              
+<div class="communicateWrite">
+
+	
+	<div class="name guest">
+		<label for="name">NAME</label>
+		<input id="name" type="text" name="name" value="">
+	</div>
+	<div class="password guest">
+		<label for="password">PASSWORD</label>
+		<input id="password" type="password" maxlength="8" name="password" value="">
+	</div>
+	<div class="homepage guest">
+		<label for="homepage">HOMEPAGE</label>
+		<input id="homepage" type="text" name="homepage" value="http://">
+	</div>
+	
+
+	<div class="textarea"><textarea name="comment" rows="10" cols="50"></textarea></div>
+	<div class="submit"><input type="submit" value="WRITE" onclick="addComment(this, 346); return false;"></div>
+	<div class="secret">
+		<label for="secret">SECRET</label>
+		<input id="secret" type="checkbox" name="secret">
+	</div>
+	<div class="clear"></div>
+</div>
+
+          </form>
+
+	
+		<div class="communicateList">
+		<ol>
+			            
+
+            
+		</ol>
+		</div>
+	
+	</div>
+	</div>
+<script type="text/javascript">loadedComments[346]=true;
+findFragmentAndHighlight(346);</script>
+
+</div>
+
+                 
+             
+
+			
+
+			<div id="paging">
+			
+			</div>
+
+			
+			<div id="recent-post">
+				<h4><a href="https://roytravel.tistory.com/category">+ Recent posts</a></h4>
+				<ul>
+					
+					<li class="box">
+						<a href="https://roytravel.tistory.com/375" class="thumb">
+							<img src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/saved_resource" onerror="this.src=&#39;https://tistory1.daumcdn.net/tistory/3162863/skin/images/blank2.png&#39;" alt="post image">
+						<span class="title">[독서노트 #32] 가난의 문법 (소준철)</span>
+						</a>
+					</li>
+					
+					<li class="box">
+						<a href="https://roytravel.tistory.com/374" class="thumb">
+							<img src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/saved_resource(1)" onerror="this.src=&#39;https://tistory1.daumcdn.net/tistory/3162863/skin/images/blank2.png&#39;" alt="post image">
+						<span class="title">[독서노트 #31] 사업을 한다는 것 (레이 크록)</span>
+						</a>
+					</li>
+					
+					<li class="box">
+						<a href="https://roytravel.tistory.com/373" class="thumb">
+							<img src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/blank2.png" onerror="this.src=&#39;https://tistory1.daumcdn.net/tistory/3162863/skin/images/blank2.png&#39;" alt="post image">
+						<span class="title">업(業)에 대한 고찰</span>
+						</a>
+					</li>
+					
+					<li class="box">
+						<a href="https://roytravel.tistory.com/372" class="thumb">
+							<img src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/saved_resource(2)" onerror="this.src=&#39;https://tistory1.daumcdn.net/tistory/3162863/skin/images/blank2.png&#39;" alt="post image">
+						<span class="title">Node JS MySQL Update 에러 해결</span>
+						</a>
+					</li>
+					
+					<li class="box">
+						<a href="https://roytravel.tistory.com/371" class="thumb">
+							<img src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/saved_resource(3)" onerror="this.src=&#39;https://tistory1.daumcdn.net/tistory/3162863/skin/images/blank2.png&#39;" alt="post image">
+						<span class="title">[데이터베이스] Redis 서버 로그 분석과 보안 설정</span>
+						</a>
+					</li>
+					
+					<div class="clear"></div>
+				</ul>
+			</div>
+			
+
+			<div class="clear"></div>
+
+			<div id="foot">
+				<div class="powered">Powered by <a href="http://www.tistory.com/" target="_blank">Tistory</a>, Designed by <a href="http://wallel.com/" target="_blank">wallel</a></div>
+				<div class="social">
+					<a href="https://roytravel.tistory.com/rss" target="_blank">Rss Feed</a> and
+					<a href="https://www.twitter.com/" target="_blank">Twitter</a>,
+					<a href="https://www.facebook.com/" target="_blank">Facebook</a>,
+					<a href="https://www.youtube.com/" target="_blank">Youtube</a>,
+					<a href="https://plus.google.com/" target="_blank">Google+</a>
+				</div>
+			</div>
+		</div> <!-- content-inner close -->
+	</div> <!-- content close -->
+</div> <!-- wrap close -->
+
+
+<div id="sidebar-toggle"><i class="icon-reorder"></i></div>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/jquery-1.11.3.min.js.다운로드"></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/common.js(1).다운로드"></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/jquery.mCustomScrollbar.concat.min.js.다운로드"></script>
+<script>
+$(document).ready(function () {
+	if ($('body').width() > "960") {
+		$("#sidebar").mCustomScrollbar({
+			theme: "dark-thin",
+			autoHideScrollbar: "true"
+		});
+	};
+});
+</script>
+<div class="#menubar menu_toolbar toolbar_rb">
+  <h2 class="screen_out">티스토리툴바</h2>
+<div class="btn_tool"><button class="btn_menu_toolbar btn_subscription  #subscribe" data-blog-id="3162863" data-url="https://roytravel.tistory.com" data-device="web_pc"><strong class="txt_tool_id">For a better world</strong><em class="txt_state">구독하기</em><span class="img_common_tistory ico_check_type1"></span></button></div></div>
+<div class="#menubar menu_toolbar "></div>
+<iframe id="editEntry" style="position:absolute;width:1px;height:1px;left:-100px;top:-100px" src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/api.html"></iframe>
+
+                <!-- DragSearchHandler - START -->
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/search_dragselection.min.js.다운로드"></script>
+
+<!-- DragSearchHandler - END -->
+
+        <!-- SyntaxHighlight - START -->
+        <link href="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/atom-one-dark-reasonable.min.css" rel="stylesheet"><script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/highlight.min.js.다운로드"></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/delphi.min.js.다운로드"></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/php.min.js.다운로드"></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/python.min.js.다운로드"></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/r.min.js.다운로드" defer=""></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/ruby.min.js.다운로드"></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/scala.min.js.다운로드" defer=""></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/shell.min.js.다운로드"></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/sql.min.js.다운로드"></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/swift.min.js.다운로드" defer=""></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/typescript.min.js.다운로드" defer=""></script>
+<script src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/vbnet.min.js.다운로드" defer=""></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+        <!-- SyntaxHighlight - END -->
+
+                
+                <script>window.tiara = {"svcDomain":"user.tistory.com","section":"글뷰","trackPage":"글뷰_보기","page":"글뷰","key":"3162863-346","customProps":{"userId":"0","blogId":"3162863","entryId":"346","role":"guest","trackPage":"글뷰_보기","filterTarget":false},"entry":{"entryId":"346","categoryName":"Computer Science/정보보안","categoryId":"1013920","author":"3929950","image":"kage@bzgqoT/btrNANr5KbS/N6WAtSPAgYSo6KtVME7hV0","plink":"/346","tags":["고려대학교","보안공학","정보보호대학원","종합시험"]},"kakaoAppKey":"3e6ddd834b023f24221217e370daed18","appUserId":"null"}</script>
+<script type="text/javascript" src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/tiara.min.js(1).다운로드"></script>
+<script type="text/javascript">(function($) {
+    $(document).ready(function() {
+        lightbox.options.fadeDuration = 200;
+        lightbox.options.resizeDuration = 200;
+        lightbox.options.wrapAround = false;
+        lightbox.options.albumLabel = "%1 / %2";
+    })
+})(tjQuery);</script>
+<div style="{margin:0; padding:0; border:none; background:none; float:none; clear:none; z-index:0}"></div>
+<script type="text/javascript" src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/common.js.다운로드"></script>
+<script type="text/javascript">window.roosevelt_params_queue = window.roosevelt_params_queue || [{channel_id: 'dk', channel_label: '{tistory}'}]</script>
+<script type="text/javascript" src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/roosevelt_dk_bt.js.다운로드" async="async"></script>
+<script type="text/javascript" src="./[사이버 보안] 보안공학 종합시험 정리 __ For a better world_files/menubar.min.js.다운로드"></script>
+<script>            (function (win, doc, src) {
+    win.Wpm = win.Wpm || function (name, param) {
+        win.Wpm.queue = win.Wpm.queue || [];
+        const { queue } = win.Wpm;
+        queue.push([name, param]);
+    };
+    const script = doc.createElement('script');
+    script.src = src;
+    script.async = 1;
+    const [elem] = doc.getElementsByTagName('script');
+    elem.parentNode.insertBefore(script, elem);
+})(window, document, 'https://t1.kakaocdn.net/malibu_prod/wpm.js');
+            const APP_KEY = 'd3cda7e82e6e4144bdc998b8e25f125d';
+            Wpm('appKey', APP_KEY);</script>
+
+                
+
+<div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><div class="lb-nav"><a class="lb-prev" href="https://roytravel.tistory.com/346"></a><a class="lb-next" href="https://roytravel.tistory.com/346"></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>
