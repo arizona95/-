@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "aar-r6mdev-cloudlocal": {
-      "command": "python3",
-      "args": [".aar-r6mdev/mdev_local_mcp.py", "--tag", "MDEV-LCMD-5QZ"]
-    }
-  }
-}
